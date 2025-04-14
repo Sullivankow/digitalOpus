@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <header class= "d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
 <!--LOGO-->
     <div class="col-md-3 mb-2 mb-md-0">
 <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
@@ -22,11 +22,11 @@
 </div>
 
 <ul class="nav col-12 col-md-auto mb-12 justify-content-center mb-md-0">
-<li><a href="index.php" class="nav-link px-2 link-secondary">Accueil</a></li>
-<li><a href="index.php" class="nav-link px-2 link-secondary">À propos</a></li>
-<li><a href="index.php" class="nav-link px-2 link-secondary">Projets</a></li>
-<li><a href="index.php" class="nav-link px-2 link-secondary">Formules</a></li>
-<li><a href="index.php" class="nav-link px-2 link-secondary">Contact</a></li>
+<li><a href="index.php" class="nav-link px-2 link-body-color ">Accueil</a></li>
+<li><a href="index.php" class="nav-link px-2 link-body-color">À propos</a></li>
+<li><a href="index.php" class="nav-link px-2 link-body-color">Projets</a></li>
+<li><a href="index.php" class="nav-link px-2 link-body-color">Formules</a></li>
+<li><a href="index.php" class="nav-link px-2 link-body-color">Contact</a></li>
 </ul>
 </div>
 
