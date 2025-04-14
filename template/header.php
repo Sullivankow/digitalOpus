@@ -17,7 +17,7 @@
 <!--LOGO-->
     <div class="col-md-3 mb-2 mb-md-0">
 <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="assets\images\logo-okaz.png" alt="logo" width="120px">
+                    <img src="asset/images/logo6.png" alt="logo" width="120px">
                 </a>
 </div>
 
