@@ -27,7 +27,7 @@
   <ul class="nav">
     <li><a href="index.php" class="nav-link px-3 link-body-color">Accueil</a></li>
     <li><a href="index.php" class="nav-link px-3 link-body-color">À propos</a></li>
-    <li><a href="index.php" class="nav-link px-3 link-body-color">Projets</a></li>
+    <li><a href="index.php" class="nav-link px-3 link-body-color">Réalisations</a></li>
     <li><a href="index.php" class="nav-link px-3 link-body-color">Formules</a></li>
     <li><a href="index.php" class="nav-link px-3 link-body-color">Contact</a></li>
   </ul>
