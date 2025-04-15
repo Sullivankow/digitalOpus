@@ -13,25 +13,50 @@
 
 <body>
     
-<header class="d-flex align-items-center justify-content-between px-4 py-3 mb-2 w-100">
-<!-- LOGO + TITRE -->
-<div class="d-flex align-items-center">
-  <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center">
-    <img src="asset/images/logo4.png" alt="logo" width="100px">
-    <span class="text-white ms-1 fs-4 fw-bold">Digital Opus</span>
-  </a>
-</div>
+<header>
+  <nav class="navbar navbar-expand-lg bg-black px-4 py-3">
+    <div class="container-fluid">
+      
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="asset/images/logo4.png" alt="logo" width="100px">
+        <span class="text-white ms-2 fs-4 fw-bold">Digital Opus</span>
+      </a>
 
+      <!-- Bouton burger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- NAVIGATION -->
-  <ul class="nav">
-    <li><a href="index.php" class="nav-link px-3 link-body-color">Accueil</a></li>
-    <li><a href="index.php" class="nav-link px-3 link-body-color">À propos</a></li>
-    <li><a href="index.php" class="nav-link px-3 link-body-color">Réalisations</a></li>
-    <li><a href="index.php" class="nav-link px-3 link-body-color">Formules</a></li>
-    <li><a href="index.php" class="nav-link px-3 link-body-color">Contact</a></li>
-  </ul>
+      <!-- Menu de navigation -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="index.php">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.php">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.php">Réalisations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.php">Formules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.php">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
 </header>
+
+
+
+
 
 
 <main>

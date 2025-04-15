@@ -121,12 +121,20 @@
 }
   
 
+.navbar-nav .nav-link:hover {
+  color: var(--bs-link-hover-color) !important;
+  transition: color 0.3s ease;
+}
+
+
+
+
 
 
 /*CAROUSEL*/
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.4); /* Fond sombre transparent */
+  background: rgba(0, 0, 0, 0.4); 
   padding: 2rem;
   border-radius: 10px;
 }
