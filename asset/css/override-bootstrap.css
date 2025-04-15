@@ -126,7 +126,9 @@
   transition: color 0.3s ease;
 }
 
-
+.navbar-toggler {
+  background-color: white;
+}
 
 
 
