@@ -31,7 +31,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
+  --bs-primary-rgb: 155, 79, 143;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -117,9 +117,13 @@
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
   --bs-form-invalid-border-color: #dc3545;
+  
 }
   
 
+
+
+/*CAROUSEL*/
 
 .carousel-caption {
   background: rgba(0, 0, 0, 0.4); /* Fond sombre transparent */
@@ -132,7 +136,7 @@
 }
 
 .carousel .btn-primary {
-  background-color: #ff5722;
-  border-color: #ff5722;
+  background-color: var(--bs-primary);
+  border: none;
 }
 
