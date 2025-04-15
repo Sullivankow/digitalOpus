@@ -150,3 +150,7 @@
   border: none;
 }
 
+.btn-primary:hover {
+  background-color: #482B78;
+}
+
