@@ -135,7 +135,9 @@
   color: #fff;
 }
 
-.carousel .btn-primary {
+
+/*BOUTON PRINCIPAL*/
+.btn-primary {
   background-color: var(--bs-primary);
   border: none;
 }
