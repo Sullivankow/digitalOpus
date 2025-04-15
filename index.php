@@ -3,22 +3,67 @@ require_once "template/header.php";
 
 ?>
 
+<!--Section hero-->
 
+<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+  <!-- Indicateurs -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
 
-<div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis">Capture d'écran centrée</h1>
-    <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
-            Concevez et personnalisez rapidement des sites mobiles réactifs avec Bootstrap, la boîte à outils open source front-end la plus populaire au monde, comprenant des variables et des mixins Sass, un système de grille réactif, de nombreux composants prédéfinis et de puissants plugins JavaScript.
-        </p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Bouton principal</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondaire</button>
-        </div>
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="asset/images/pic1.jpg" class="d-block w-100 img-fluid" alt="Création site web moderne">
+      <div class="carousel-caption text-start">
+        <h1>Sites modernes & performants</h1>
+        <p>Nous concevons des expériences digitales engageantes.</p>
+        <p><a class="btn btn-primary btn-lg" href="#contact">Contactez-nous</a></p>
+      </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-        <div class="container px-5">
-            <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Exemple d'image" width="700" height="500" loading="lazy">
-        </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="asset/images/pic2.jpg" class="d-block w-100 img-fluid" alt="Optimisation SEO">
+      <div class="carousel-caption">
+        <h1>Optimisation SEO naturelle</h1>
+        <p>Attirez plus de clients grâce à un référencement efficace.</p>
+        <p><a class="btn btn-primary btn-lg" href="#formules">Voir nos formules</a></p>
+      </div>
     </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="asset/images/pic3.jpg" class="d-block w-100 img-fluid" alt="Design responsive">
+      <div class="carousel-caption text-end">
+        <h1>Responsive & intuitif</h1>
+        <p>Adapté à tous les écrans, pour une navigation fluide.</p>
+        <p><a class="btn btn-primary btn-lg" href="#projets">Nos réalisations</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contrôles -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Précédent</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Suivant</span>
+  </button>
 </div>
+
+
+
+
+
+
+
+
+
+
+

@@ -12,31 +12,28 @@
 </head>
 
 <body>
-    <div class="container">
-    <header class= "d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-<!--LOGO-->
-    <div class="col-md-3 mb-2 mb-md-0">
-<a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                    <img src="asset/images/logo6.png" alt="logo" width="120px">
-                </a>
-</div>
-
-<ul class="nav col-12 col-md-auto mb-12 justify-content-center mb-md-0">
-<li><a href="index.php" class="nav-link px-2 link-body-color ">Accueil</a></li>
-<li><a href="index.php" class="nav-link px-2 link-body-color">À propos</a></li>
-<li><a href="index.php" class="nav-link px-2 link-body-color">Projets</a></li>
-<li><a href="index.php" class="nav-link px-2 link-body-color">Formules</a></li>
-<li><a href="index.php" class="nav-link px-2 link-body-color">Contact</a></li>
-</ul>
+    
+<header class="d-flex align-items-center justify-content-between px-4 py-3 mb-2 w-100">
+<!-- LOGO + TITRE -->
+<div class="d-flex align-items-center">
+  <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none align-items-center">
+    <img src="asset/images/logo4.png" alt="logo" width="100px">
+    <span class="text-white ms-1 fs-4 fw-bold">Digital Opus</span>
+  </a>
 </div>
 
 
-
-
-
-
-
+  <!-- NAVIGATION -->
+  <ul class="nav">
+    <li><a href="index.php" class="nav-link px-3 link-body-color">Accueil</a></li>
+    <li><a href="index.php" class="nav-link px-3 link-body-color">À propos</a></li>
+    <li><a href="index.php" class="nav-link px-3 link-body-color">Projets</a></li>
+    <li><a href="index.php" class="nav-link px-3 link-body-color">Formules</a></li>
+    <li><a href="index.php" class="nav-link px-3 link-body-color">Contact</a></li>
+  </ul>
 </header>
+
+
 </body>
 
 
