@@ -65,30 +65,22 @@ require_once "template/header.php";
 <!--Section à propos-->
 
 <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-        </div>
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 data-aos=" data-aos="fade-up" data-aos-duration="1000">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="asset/images/logo1.png" class="d-block mx-auto img-fluid" alt="Logo" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold  lh-1 mb-3">Pourquoi faire appel à nous?</h1>
+      <p class="lead">Faites appel à notre agence pour concevoir un site web à votre image, alliant design moderne, performance et expérience utilisateur optimale. Nous vous accompagnons à chaque étape, de la réflexion stratégique à la mise en ligne, afin de créer une présence digitale efficace, adaptée à vos objectifs et à votre secteur d’activité.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Demander un devis</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Voir nos réalisations</button>
       </div>
     </div>
   </div>
+</div>
 
 
 <?php
 require_once "template/footer.php"
 ?>
-
-
-
-
-
-
-
-

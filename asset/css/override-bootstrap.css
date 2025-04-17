@@ -74,7 +74,7 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: white;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg:black;
+  --bs-body-bg: black;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -117,9 +117,10 @@
   --bs-form-valid-border-color: #198754;
   --bs-form-invalid-color: #dc3545;
   --bs-form-invalid-border-color: #dc3545;
-  
+
 }
-  
+
+
 
 .navbar-nav .nav-link:hover {
   color: var(--bs-link-hover-color) !important;
@@ -136,12 +137,13 @@
 /*CAROUSEL*/
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   padding: 2rem;
   border-radius: 10px;
 }
 
-.carousel-caption h1, .carousel-caption p {
+.carousel-caption h1,
+.carousel-caption p {
   color: #fff;
 }
 
@@ -155,4 +157,3 @@
 .btn-primary:hover {
   background-color: #482B78;
 }
-
