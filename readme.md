@@ -18,6 +18,8 @@ HTML5 / CSS3
 
 Bootstrap 5.3 (CDN)
 
+AOS (Bibliothèque JAVASCRIPT)
+
 Bootstrap Icons
 
 JavaScript (pour les prochaines features dynamiques)
