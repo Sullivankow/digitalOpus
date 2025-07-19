@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="asset/css/override-bootstrap.css">
-    <title>Digital Opus, création de site internet, optimisation de référencement naturel</title>
+    <title>Sundev Agency, création de site internet, optimisation de référencement naturel</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="/">
         <img src="asset/images/logo4.png" alt="logo" width="100px" height="70px">
-        <span class="text-white ms-1 fs-4 fw-bold">Digital Opus</span>
+        <span class="text-white ms-1 fs-4 fw-bold">Sundev Agency</span>
       </a>
 
       <!-- Bouton burger -->
