@@ -19,8 +19,8 @@
       
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="asset/images/logo4.png" alt="logo" width="100px">
-        <span class="text-white ms-2 fs-4 fw-bold">Digital Opus</span>
+        <img src="asset/images/logo4.png" alt="logo" width="100px" height="70px">
+        <span class="text-white ms-1 fs-4 fw-bold">Digital Opus</span>
       </a>
 
       <!-- Bouton burger -->
