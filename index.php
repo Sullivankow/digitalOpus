@@ -67,7 +67,7 @@ require_once "template/header.php";
 <div class="about-section container col-xxl-10 px-4 py-5 ">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <div id="lottie-computer" style="width:100%;max-width:400px;margin:auto"></div>
+        <div id="lottie-computer" style="width:100%;max-width:800px;margin:auto"></div>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-white lh-1 mb-3">À propos de SunDev Agency</h1>
