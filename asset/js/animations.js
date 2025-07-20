@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*Animation dessin dans le container à propos de nous*/
 lottie.loadAnimation({
-  container: document.getElementById("lottie-computer"),
+  container: document.getElementById("lottie-computer-aboutUs"),
   renderer: "svg",
   loop: true,
   autoplay: true,
