@@ -19,7 +19,7 @@
       
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="asset/images/logo4.png" alt="logo" width="100px" height="70px">
+        <img src="asset/images/logo4.png" alt="logo" width="100px" height="90px">
         <span class="text-white ms-1 fs-4 fw-bold">Sundev Agency</span>
       </a>
 
