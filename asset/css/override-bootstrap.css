@@ -219,10 +219,42 @@
   z-index: 3;
 }
 
+/*Pourquoi nous choisir*/
+.why-choose-section {
 
-
-
-
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.why-choose-section h2 {
+  letter-spacing: 1px;
+}
+.why-lottie {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 12px #00eaff88);
+}
+.why-choose-section h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.why-choose-section p {
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .why-lottie {
+    width: 60px;
+    height: 60px;
+  }
+  .why-choose-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 
 /*Responsive mobile realisation*/
 @media (max-width: 767px) {

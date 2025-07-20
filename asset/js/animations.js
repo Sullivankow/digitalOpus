@@ -25,3 +25,37 @@ lottie.loadAnimation({
   autoplay: true,
   path: "https://lottie.host/08eb5f50-45c8-43de-b235-5af2173cd158/TUhJ7OHOOC.json", // URL de l’animation Lottie choisie
 });
+
+/*animation pour la section pourquoi nous choisir*/
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.lottie) {
+    lottie.loadAnimation({
+      container: document.getElementById("why-lottie-1"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "https://lottie.host/bf9a3577-8a1b-4689-9555-a4bc1e469cbd/cdtWU7rXN8.json",
+    });
+    lottie.loadAnimation({
+      container: document.getElementById("why-lottie-2"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "https://lottie.host/8d8e9d81-4c87-40c6-820f-380d3b488e52/vw7TCaHpni.json",
+    });
+    lottie.loadAnimation({
+      container: document.getElementById("why-lottie-3"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "https://lottie.host/3fedd853-b8bc-4231-a181-463e227789a1/PiuotuEi7g.json",
+    });
+    lottie.loadAnimation({
+      container: document.getElementById("why-lottie-4"),
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "https://lottie.host/028b174f-dc2a-467e-bd26-6a69c718d0e6/gpbxaAuiRQ.json",
+    });
+  }
+});
