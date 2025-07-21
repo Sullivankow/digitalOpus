@@ -181,7 +181,7 @@ require_once "template/header.php";
 
 <!--Section pourquoi nous choisir-->
 <section class="why-choose-section py-5">
-  <div class="container">
+  <div class=" container">
     <h2 class="text-center text-white mb-5 display-4 fw-bold">Pourquoi nous choisir ?</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
       <div class="col d-flex flex-column align-items-center text-center">

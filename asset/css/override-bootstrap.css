@@ -154,8 +154,12 @@
 }
 
 
+
+
+
+
 /*Animation ABOUT US*/ 
-.about-section {
+.about-section  {
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.4,2,.3,1);
@@ -165,13 +169,28 @@
   transform: translateY(0);
 }
 
+
+
+
+
+
+
 /* Section réalisations : fond dégradé violet-bleu et cards animées */
 .realisations-section {
   background: linear-gradient(135deg, #9B4F8F 40%, #2575fc 100%);
   min-height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.4,2,.3,1);
 }
+
+.realisations-section.visible {
+   opacity: 1;
+  transform: translateY(0);
+}
+
 .realisations-section .card-title {
   font-weight: 700;
   color: #6a11cb;
@@ -219,6 +238,12 @@
   z-index: 3;
 }
 
+
+
+
+
+
+
 /*Pourquoi nous choisir*/
 .why-choose-section {
 
@@ -255,6 +280,20 @@
     padding-bottom: 30px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Responsive mobile realisation*/
 @media (max-width: 767px) {

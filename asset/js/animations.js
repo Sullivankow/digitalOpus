@@ -1,7 +1,7 @@
 /*Animation du container à propos de nous*/
 
 document.addEventListener("DOMContentLoaded", function () {
-  const section = document.querySelector(".about-section");
+  const section = document.querySelector(".about-section  ");
   if (!section) return;
   const observer = new IntersectionObserver(
     (entries) => {
@@ -15,6 +15,23 @@ document.addEventListener("DOMContentLoaded", function () {
     { threshold: 0.2 }
   );
   observer.observe(section);
+
+  // Animation pour la section "realisations-section"
+  const realisationsSection = document.querySelector(".realisations-section");
+  if (realisationsSection) {
+    const observerRealisations = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            realisationsSection.classList.add("visible");
+            observerRealisations.unobserve(realisationsSection);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observerRealisations.observe(realisationsSection);
+  }
 });
 
 /*Animation dessin dans le container à propos de nous*/
