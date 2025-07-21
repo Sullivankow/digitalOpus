@@ -32,6 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     observerRealisations.observe(realisationsSection);
   }
+
+  const whyChooseSection = document.querySelector(".why-choose-section");
+  if (whyChooseSection) {
+    const observerWhyChoose = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            whyChooseSection.classList.add("visible");
+            oberserverSection.unobserve(observewhyChoose);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observerWhyChoose.observe(whyChooseSection);
+  }
 });
 
 /*Animation dessin dans le container à propos de nous*/
