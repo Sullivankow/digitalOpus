@@ -48,6 +48,23 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     observerWhyChoose.observe(whyChooseSection);
   }
+
+  /*Animation d'apparition de la section formule*/
+  const formulesSection = document.querySelector(".formules-section");
+  if (formulesSection) {
+    const observerFormules = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            formulesSection.classList.add("visible");
+            observerFormules.unobserve(formulesSection);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observerFormules.observe(formulesSection);
+  }
 });
 
 /*Animation dessin dans le container à propos de nous*/
@@ -90,5 +107,29 @@ document.addEventListener("DOMContentLoaded", function () {
       autoplay: true,
       path: "https://lottie.host/028b174f-dc2a-467e-bd26-6a69c718d0e6/gpbxaAuiRQ.json",
     });
+    /*Animation pour la section formules*/
+    if (window.lottie) {
+      lottie.loadAnimation({
+        container: document.getElementById("formule-lottie-1"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "https://lottie.host/14504404-d3df-4e5e-b077-fdaa32c932ee/sDEw2NzTwT.json", // Animation vitrine
+      });
+      lottie.loadAnimation({
+        container: document.getElementById("formule-lottie-2"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "https://lottie.host/ab259f1f-9572-4464-a834-996ea2a268bf/i8tJo5mxKb.json", // Animation e-commerce
+      });
+      lottie.loadAnimation({
+        container: document.getElementById("formule-lottie-3"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "https://lottie.host/040a2a07-df1c-4859-974b-37c2e90914ab/eAV2lDMDI0.json", // Animation sur-mesure
+      });
+    }
   }
 });

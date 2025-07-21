@@ -299,6 +299,46 @@
 
 
 
+/* SECTION NOS FORMULES */
+
+.formules-section {
+  background: linear-gradient(135deg, #9B4F8F 40%, #2575fc 100%);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.4,2,.3,1);
+}
+.formules-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.formule-lottie {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 12px #00eaff88);
+}
+.formules-section h4 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.formules-section p {
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -317,5 +357,17 @@
   .real-card .card-img-top {
     height: 120px;
     padding: 1rem;
+  }
+}
+
+/*Responsive section formules*/
+@media (max-width: 767px) {
+  .formule-lottie {
+    width: 60px;
+    height: 60px;
+  }
+  .formules-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
