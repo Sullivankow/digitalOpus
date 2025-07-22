@@ -1,5 +1,5 @@
 <!--Formulaire de contact-->
-<div class="contact-form">
+<div id="contact" class="contact-form">
 <h2 class="contact-title text-primary">
     <i class="bi bi-envelope-paper-heart me-2"></i>Contactez SunDev Agency</h2>
 

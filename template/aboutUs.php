@@ -1,6 +1,6 @@
 <!--Section à propos-->
 
-<div class="about-section container col-xxl-10 px-4 py-5 ">
+<div id="about" class="about-section container col-xxl-10 px-4 py-5 ">
   <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
     <div class="col-10 col-sm-8 col-lg-6">
       <div id="lottie-computer-aboutUs" style="width:100%;max-width:800px;margin:auto"></div>

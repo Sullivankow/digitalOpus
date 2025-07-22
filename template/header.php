@@ -36,16 +36,16 @@
             <a class="nav-link text-white" href="index.php">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php">À propos</a>
+            <a class="nav-link text-white" href="index.php#about">À propos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php">Réalisations</a>
+            <a class="nav-link text-white" href="index.php#realisations">Réalisations</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php">Formules</a>
+            <a class="nav-link text-white" href="index.php#formules">Formules</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php">Contact</a>
+            <a class="nav-link text-white" href="index.php#contact">Contact</a>
           </li>
         </ul>
       </div>

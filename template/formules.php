@@ -1,5 +1,5 @@
 <!--Section formules-->
-<section class="formules-section py-5">
+<section id="formules" class="formules-section py-5">
   <div class="container">
     <h2 class="text-center text-white mb-5 display-4 fw-bold">Nos formules</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
