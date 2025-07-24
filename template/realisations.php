@@ -5,15 +5,18 @@
     <div class="row g-4 justify-content-center">
       <div class="col-12 col-md-6 col-lg-4">
         <div class="real-card h-100 shadow-lg">
-          <img src="asset/images/logo1.png" class="card-img-top" alt="Projet 1">
+          <img src="asset/images/overst.png" class="card-img-top" alt="Projet 1">
           <div class="card-body p-4">
-            <h5 class="card-title mb-3">Projet Vitrine</h5>
+            <h5 class="card-title mb-3">Projet Øverst</h5>
             <div class="mb-3">
               <span class="badge bg-primary me-1">HTML</span>
-              <span class="badge bg-info text-dark me-1">CSS</span>
-              <span class="badge bg-warning text-dark">Bootstrap</span>
+              <span class="badge bg-info text-dark me-1">CSS/Tailwind</span>
+              <span class="badge bg-info text-dark me-1">Typescript</span>
+              <span class="badge bg-warning text-dark">React.js</span>
+              <span class="badge bg-warning text-dark">Lucid</span>
+              
             </div>
-            <p class="card-text">Site vitrine moderne pour une startup innovante, design responsive et animations subtiles.</p>
+            <p class="card-text">Site vitrine moderne pour l'artiste électro pop Øverst, design responsive avec lecteur audio, vidéo et formulaire de contact.</p>
           </div>
         </div>
       </div>
