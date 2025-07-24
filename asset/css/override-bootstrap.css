@@ -127,6 +127,11 @@ html {
 }
 
 
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+
 .navbar-nav .nav-link:hover {
   color: var(--bs-link-hover-color) !important;
   transition: color 0.3s ease;
