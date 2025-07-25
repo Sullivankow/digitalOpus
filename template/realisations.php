@@ -51,27 +51,24 @@ $projects = [
         <!-- Modal pour chaque projet -->
         <div class="modal fade" id="projectModal<?= $index ?>" tabindex="-1" aria-labelledby="projectModalLabel<?= $index ?>" aria-hidden="true">
           <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content bg-white">
               <div class="modal-header">
                 <h5 class="modal-title" id="projectModalLabel<?= $index ?>"><?= $project['title'] ?></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <div id="modal-carousel<?= $index ?>" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <?php foreach ($project['images'] as $imageIndex => $image): ?>
-                      <div class="carousel-item <?= $imageIndex === 0 ? 'active' : '' ?>">
-                        <img src="<?= $image ?>" class="d-block w-100" alt="Image <?= $imageIndex + 1 ?>">
+                <div class="row g-3 justify-content-center">
+                  <?php foreach ($project['images'] as $imageIndex => $image): ?>
+                    <div class="col-12 col-sm-6 col-md-4">
+                      <div class="modal-img-wrapper">
+                        <img src="<?= $image ?>" class="img-fluid modal-img" alt="Image <?= $imageIndex + 1 ?>">
                       </div>
-                    <?php endforeach; ?>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#modal-carousel<?= $index ?>" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel<?= $index ?>" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    </div>
+                  <?php endforeach; ?>
+                </div>
+                <div class="d-flex justify-content-end mt-4">
+                  <button type="button" class="btn btn-primary btn-lg px-4 py-2" data-bs-dismiss="modal" aria-label="Close">
+                    Fermer
                   </button>
                 </div>
               </div>
