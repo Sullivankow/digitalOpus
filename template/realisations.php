@@ -3,24 +3,52 @@
 $projects = [
   [
     "title" => "Projet Øverst",
-    "images" => ["asset/images/overst.png", "asset/images/overst1.png", "asset/images/overst2.png"],
+    "images" => ["asset/images/overst.png", "asset/images/overst1.png", "asset/images/overst2.png", "asset/images/overst3.png", "asset/images/overst4.png", "asset/images/overst5.png"],
     "badges" => ["HTML", "css/Tailwind", "Typescript", "React.js", "Lucid"],
     "description" => "Site vitrine moderne pour l'artiste électro pop Øverst, design responsive avec lecteur audio, vidéo et formulaire de contact."
   ],
   [
-    "title" => "E-commerce",
-    "images" => ["asset/images/logo2.png"],
-    "badges" => ["PHP", "MySQL", "Stripe"],
-    "description" => "Boutique en ligne performante, gestion de catalogue, paiement sécurisé et interface intuitive."
+    "title" => "Arcadia",
+    "images" => ["asset/images/arcadia3.png", "asset/images/arcadia4.png", "asset/images/arcadia5.png"],
+    "badges" => ["HTML", "CSS", "Javascript", "PHP", "MySql", "Symfony"],
+    "description" => "Site de gestion de parc zooloogique Arcadia, avec gestion des animaux, des habitats, des employés, interface intuitive, admin et responsive design. Gestion de base de données."
   ],
   [
-    "title" => "Identité visuelle",
+    "title" => "Laeti Nails",
+    "images" => ["asset/images/laetinails.png", "asset/images/laetinails2.png", "asset/images/laetinails3.png", "asset/images/laetinails4.png", "asset/images/laetinails5.png"],
+    "badges" => ["Illustrator", "Photoshop"],
+    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+  ],
+  [
+    "title" => "Laeti Nails",
+    "images" => ["asset/images/logo3.png"],
+    "badges" => ["Illustrator", "Photoshop"],
+    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+  ],
+  [
+    "title" => "Laeti Nails",
+    "images" => ["asset/images/logo3.png"],
+    "badges" => ["Illustrator", "Photoshop"],
+    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+  ],
+  [
+    "title" => "Laeti Nails",
+    "images" => ["asset/images/logo3.png"],
+    "badges" => ["Illustrator", "Photoshop"],
+    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+  ],
+  [
+    "title" => "Laeti Nails",
     "images" => ["asset/images/logo3.png"],
     "badges" => ["Illustrator", "Photoshop"],
     "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
   ]
 
 ]
+
+
+
+
 
 ?>
 
