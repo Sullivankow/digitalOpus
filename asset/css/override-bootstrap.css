@@ -583,8 +583,9 @@ body {
   }
 
   .real-card .card-img-top {
-    height: 120px;
-    padding: 1rem;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
