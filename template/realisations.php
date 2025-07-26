@@ -47,132 +47,36 @@ $projects = [
             </div>
           </div>
         </div>
-
-        <!-- Modal pour chaque projet -->
-        <div class="modal fade" id="projectModal<?= $index ?>" tabindex="-1" aria-labelledby="projectModalLabel<?= $index ?>" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content bg-white">
-              <div class="modal-header">
-                <h5 class="modal-title" id="projectModalLabel<?= $index ?>"><?= $project['title'] ?></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="row g-3 justify-content-center">
-                  <?php foreach ($project['images'] as $imageIndex => $image): ?>
-                    <div class="col-12 col-sm-6 col-md-4">
-                      <div class="modal-img-wrapper">
-                        <img src="<?= $image ?>" class="img-fluid modal-img" alt="Image <?= $imageIndex + 1 ?>">
-                      </div>
-                    </div>
-                  <?php endforeach; ?>
-                </div>
-                <div class="d-flex justify-content-end mt-4">
-                  <button type="button" class="btn btn-primary btn-lg px-4 py-2" data-bs-dismiss="modal" aria-label="Close">
-                    Fermer
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Fin de la modal -->
       <?php endforeach; ?>
     </div>
   </div>
 </section>
 
 
-<!--Section réalisation-->
-<!-- <section id="realisations" class="realisations-section py-5">
-  <div class="container">
-    <h2 class="text-center text-white mb-5 display-4 fw-bold">Nos réalisations</h2>
-    <div class="row g-4 justify-content-center">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="real-card h-100 shadow-lg">
-          <img src="asset/images/overst.png" class="card-img-top" alt="Projet 1">
-          <div class="card-body p-4">
-            <h5 class="card-title mb-3">Projet Øverst</h5>
-            <div class="mb-3">
-              <span class="badge bg-primary me-1">HTML</span>
-              <span class="badge bg-info text-dark me-1">CSS/Tailwind</span>
-              <span class="badge bg-info text-dark me-1">Typescript</span>
-              <span class="badge bg-warning text-dark">React.js</span>
-              <span class="badge bg-warning text-dark">Lucid</span>
-              
-            </div>
-            <p class="card-text">Site vitrine moderne pour l'artiste électro pop Øverst, design responsive avec lecteur audio, vidéo et formulaire de contact.</p>
+
+
+<!-- Modal pour afficher les photos du projet sous forme de grille -->
+<?php foreach ($projects as $index => $project): ?>
+  <div class="modal fade" id="projectModal<?= $index ?>" tabindex="-1" aria-labelledby="projectModalLabel<?= $index ?>" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel<?= $index ?>">Photos du projet : <?= $project['title'] ?></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <?php foreach ($project['images'] as $image): ?>
+              <div class="col-6 col-md-4">
+                <img src="<?= $image ?>" class="img-fluid rounded modal-image" alt="Photo du projet" data-bs-toggle="modal" data-bs-target="#fullScreenModal">
+              </div>
+            <?php endforeach; ?>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="real-card h-100 shadow-lg">
-          <img src="asset/images/logo2.png" class="card-img-top" alt="Projet 2">
-          <div class="card-body p-4">
-            <h5 class="card-title mb-3">E-commerce</h5>
-            <div class="mb-3">
-              <span class="badge bg-primary me-1">PHP</span>
-              <span class="badge bg-success me-1">MySQL</span>
-              <span class="badge bg-warning text-dark">Stripe</span>
-            </div>
-            <p class="card-text">Boutique en ligne performante, gestion de catalogue, paiement sécurisé et interface intuitive.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="real-card h-100 shadow-lg">
-          <img src="asset/images/logo3.png" class="card-img-top" alt="Projet 3">
-          <div class="card-body p-4">
-            <h5 class="card-title mb-3">Identité visuelle</h5>
-            <div class="mb-3">
-              <span class="badge bg-danger me-1">Illustrator</span>
-              <span class="badge bg-dark">Photoshop</span>
-            </div>
-            <p class="card-text">Création de logo, charte graphique et supports de communication pour une marque dynamique.</p>
-          </div>
-        </div>
-      </div>
-       <div class="col-12 col-md-6 col-lg-4">
-        <div class="real-card h-100 shadow-lg">
-          <img src="asset/images/logo2.png" class="card-img-top" alt="Projet 2">
-          <div class="card-body p-4">
-            <h5 class="card-title mb-3">E-commerce</h5>
-            <div class="mb-3">
-              <span class="badge bg-primary me-1">PHP</span>
-              <span class="badge bg-success me-1">MySQL</span>
-              <span class="badge bg-warning text-dark">Stripe</span>
-            </div>
-            <p class="card-text">Boutique en ligne performante, gestion de catalogue, paiement sécurisé et interface intuitive.</p>
-          </div>
-        </div>
-      </div>
-       <div class="col-12 col-md-6 col-lg-4">
-        <div class="real-card h-100 shadow-lg">
-          <img src="asset/images/logo2.png" class="card-img-top" alt="Projet 2">
-          <div class="card-body p-4">
-            <h5 class="card-title mb-3">E-commerce</h5>
-            <div class="mb-3">
-              <span class="badge bg-primary me-1">PHP</span>
-              <span class="badge bg-success me-1">MySQL</span>
-              <span class="badge bg-warning text-dark">Stripe</span>
-            </div>
-            <p class="card-text">Boutique en ligne performante, gestion de catalogue, paiement sécurisé et interface intuitive.</p>
-          </div>
-        </div>
-      </div>
-       <div class="col-12 col-md-6 col-lg-4">
-        <div class="real-card h-100 shadow-lg">
-          <img src="asset/images/logo2.png" class="card-img-top" alt="Projet 2">
-          <div class="card-body p-4">
-            <h5 class="card-title mb-3">E-commerce</h5>
-            <div class="mb-3">
-              <span class="badge bg-primary me-1">PHP</span>
-              <span class="badge bg-success me-1">MySQL</span>
-              <span class="badge bg-warning text-dark">Stripe</span>
-            </div>
-            <p class="card-text">Boutique en ligne performante, gestion de catalogue, paiement sécurisé et interface intuitive.</p>
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+<?php endforeach; ?>
