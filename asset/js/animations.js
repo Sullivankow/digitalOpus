@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*Ajout d'une fonctionnalité pour afficher une image sélectionnée en grand */
 document.addEventListener('DOMContentLoaded', function () {
-  const modalImages = document.querySelectorAll('.modal img');
+  const modalImages = document.querySelectorAll('.modal-image');
   const fullScreenContainer = document.createElement('div');
   fullScreenContainer.style.display = 'none';
   fullScreenContainer.style.position = 'fixed';
@@ -168,26 +168,32 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.appendChild(fullScreenContainer);
 
   let currentIndex = 0;
+  let currentImages = [];
 
   const updateModalImage = () => {
-    fullScreenImage.src = modalImages[currentIndex].src;
+    fullScreenImage.src = currentImages[currentIndex].src;
   };
 
-  modalImages.forEach((image, index) => {
+  modalImages.forEach((image) => {
     image.addEventListener('click', function () {
-      currentIndex = index;
+      const modalBody = this.closest('.modal-body');
+      if (!modalBody) return;
+      currentImages = Array.from(modalBody.querySelectorAll('.modal-image'));
+      currentIndex = currentImages.indexOf(this);
       updateModalImage();
       fullScreenContainer.style.display = 'flex';
     });
   });
 
-  prevButton.addEventListener('click', function () {
-    currentIndex = (currentIndex - 1 + modalImages.length) % modalImages.length;
+  prevButton.addEventListener('click', function (e) {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
     updateModalImage();
   });
 
-  nextButton.addEventListener('click', function () {
-    currentIndex = (currentIndex + 1) % modalImages.length;
+  nextButton.addEventListener('click', function (e) {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % currentImages.length;
     updateModalImage();
   });
 
