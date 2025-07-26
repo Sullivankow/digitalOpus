@@ -175,6 +175,13 @@ body {
   transform: translateY(0);
 }
 
+@media (max-width: 767px) {
+  .about-section #lottie-computer-aboutUs {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 
 
 
@@ -518,6 +525,9 @@ body {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+    max-width: 120px;
+    /* Réduction de la taille du logo */
+    width: 100%;
   }
 
   .navbar-toggler {
