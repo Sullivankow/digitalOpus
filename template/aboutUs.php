@@ -1,6 +1,6 @@
 <!--Section à propos-->
 
-<div id="about" class="about-section container-fluid d-flex flex-column align-items-center justify-content-center text-center px-5 py-5">
+<div id="about" class="about-section container-fluid d-flex flex-column align-items-center justify-content-center  px-5 py-5">
   <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
     <div class="col-10 col-sm-8 col-lg-6">
       <div id="lottie-computer-aboutUs" style="width:100%;max-width:900px;margin:0 auto;"></div>
