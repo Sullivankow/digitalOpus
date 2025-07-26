@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="asset/css/override-bootstrap.css">
   <title>Sundev Agency, création de site internet, optimisation de référencement naturel</title>
-
 </head>
 
 <body>
@@ -63,4 +62,4 @@
 
 
 
-  <main></main>
+  <main>

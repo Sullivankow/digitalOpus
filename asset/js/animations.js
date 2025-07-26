@@ -134,11 +134,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-
-/*Animation pour les images en plein écran dans la modal*/
+/*Ajout d'une fonctionnalité pour afficher une image sélectionnée en grand */
 document.addEventListener('DOMContentLoaded', function () {
-  const modalImages = document.querySelectorAll('.modal-image');
+  const modalImages = document.querySelectorAll('.modal img');
   const fullScreenContainer = document.createElement('div');
   fullScreenContainer.style.display = 'none';
   fullScreenContainer.style.position = 'fixed';
@@ -150,87 +148,44 @@ document.addEventListener('DOMContentLoaded', function () {
   fullScreenContainer.style.zIndex = '1050';
   fullScreenContainer.style.justifyContent = 'center';
   fullScreenContainer.style.alignItems = 'center';
-
-  const carouselContainer = document.createElement('div');
-  carouselContainer.style.display = 'flex';
-  carouselContainer.style.alignItems = 'center';
-  carouselContainer.style.justifyContent = 'space-between';
-  carouselContainer.style.width = '80%';
-
-  const prevButton = document.createElement('button');
-  prevButton.textContent = '<';
-  prevButton.style.fontSize = '2rem';
-  prevButton.style.color = '#fff';
-  prevButton.style.background = 'none';
-  prevButton.style.border = 'none';
-  prevButton.style.cursor = 'pointer';
-
-  const nextButton = document.createElement('button');
-  nextButton.textContent = '>';
-  nextButton.style.fontSize = '2rem';
-  nextButton.style.color = '#fff';
-  nextButton.style.background = 'none';
-  nextButton.style.border = 'none';
-  nextButton.style.cursor = 'pointer';
+  fullScreenContainer.style.cursor = 'zoom-out';
 
   const fullScreenImage = document.createElement('img');
   fullScreenImage.style.maxWidth = '90%';
   fullScreenImage.style.maxHeight = '90%';
-
-  carouselContainer.appendChild(prevButton);
-  carouselContainer.appendChild(fullScreenImage);
-  carouselContainer.appendChild(nextButton);
-  fullScreenContainer.appendChild(carouselContainer);
-
-  const closeButton = document.createElement('button');
-  closeButton.textContent = '×';
-  closeButton.style.position = 'absolute';
-  closeButton.style.top = '10px';
-  closeButton.style.right = '10px';
-  closeButton.style.fontSize = '2rem';
-  closeButton.style.color = '#fff';
-  closeButton.style.background = 'none';
-  closeButton.style.border = 'none';
-  closeButton.style.cursor = 'pointer';
-  fullScreenContainer.appendChild(closeButton);
+  fullScreenContainer.appendChild(fullScreenImage);
 
   document.body.appendChild(fullScreenContainer);
 
-  let currentIndex = 0;
-  const updateImage = (images) => {
-    fullScreenImage.src = images[currentIndex];
-  };
-
-
-  /*Ajout des évènements au clic sur les images de la modal pour effet carousel en plein écran pour la section realisations*/
   modalImages.forEach(image => {
     image.addEventListener('click', function () {
-      const cardImages = Array.from(this.closest('.modal').querySelectorAll('.modal-image')).map(img => img.src);
-      currentIndex = cardImages.indexOf(this.src);
-      updateImage(cardImages);
+      fullScreenImage.src = this.src;
       fullScreenContainer.style.display = 'flex';
-
-      prevButton.onclick = function () {
-        currentIndex = (currentIndex - 1 + cardImages.length) % cardImages.length;
-        updateImage(cardImages);
-      };
-
-      nextButton.onclick = function () {
-        currentIndex = (currentIndex + 1) % cardImages.length;
-        updateImage(cardImages);
-      };
     });
   });
 
-  closeButton.addEventListener('click', function () {
-    fullScreenContainer.style.display = 'none';
-  });
-
-  fullScreenContainer.addEventListener('click', function (e) {
-    if (e.target === fullScreenContainer) {
-      fullScreenContainer.style.display = 'none';
-    }
+  fullScreenContainer.addEventListener('click', function () {
+    this.style.display = 'none';
   });
 });
 
 
+//Fonction permettant de fermer le menu burger en cliant en dehors de celui-ci
+document.addEventListener('click', function (event) {
+  const menu = document.getElementById('navbarNav');
+  const toggler = document.querySelector('.navbar-toggler');
+
+  // Vérifie si le clic est en dehors du menu et du bouton toggler
+  if (!menu.contains(event.target) && !toggler.contains(event.target)) {
+    menu.classList.remove('show');
+  }
+});
+
+
+//Permet d'aller à la section demandée après fermeture du menu burger
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function () {
+    const menu = document.getElementById('navbarNav');
+    menu.classList.remove('show');
+  });
+});
