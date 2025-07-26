@@ -6,20 +6,25 @@ $formules = [
       "✔ Design personnalisé",
       "✔ Site responsive",
       "✔ Référencement naturel inclus",
-      "✔ Pages illimitées"
+      "✔ Formulaire de contact simple",
+      "✔ Jusqu'à 5 pages"
+
     ],
-    "badge" => ["text" => "À partir de 499€", "class" => "bg-primary"],
+
+    "badge" => ["text" => "À partir de 990€", "class" => "bg-primary"],
     "lottieId" => "formule-lottie-1"
   ],
   [
     "title" => "E-commerce",
     "features" => [
       "✔ Boutique en ligne sécurisée",
-      "✔ Gestion des produits & commandes",
+      "✔ Jusqu’à 8 pages",
       "✔ Paiement en ligne (Stripe, PayPal...)",
-      "✔ Accompagnement personnalisé"
+      "✔ Formulaire dynamique",
+      "✔ Conformité RGPD",
+      "✔ Design personnalisé"
     ],
-    "badge" => ["text" => "À partir de 899€", "class" => "bg-success"],
+    "badge" => ["text" => "À partir de 2490€", "class" => "bg-success"],
     "lottieId" => "formule-lottie-2"
   ],
   [
@@ -28,13 +33,53 @@ $formules = [
       "✔ Fonctionnalités avancées",
       "✔ Développement spécifique",
       "✔ Conseil & accompagnement expert",
-      "✔ Maintenance & évolutions"
+      "✔ Maintenance & évolutions",
+      "✔  Blog optimisé et SEO avancé",
+      "✔  Rédaction du contenu",
+      "✔  Formation client incluse",
+
     ],
     "badge" => ["text" => "Sur devis", "class" => "bg-warning text-dark"],
     "lottieId" => "formule-lottie-3"
-  ]
+  ],
+  [
+    "title" => "SEO & Marketing",
+    "features" => [
+      "✔ Optimisation SEO avancée",
+      "✔ Campagnes publicitaires",
+      "✔ Analyse de trafic",
+      "✔ Stratégie digitale"
+    ],
+    "badge" => ["text" => "À partir de 290€", "class" => "bg-info"],
+    "lottieId" => "formule-lottie-4"
+  ],
+  [
+    "title" => "Maintenance/Hébergement",
+    "features" => [
+      "✔ Surveillance 24/7",
+      "✔ Sauvegarde automatique",
+      "✔ Mises à jour régulières",
+      "✔ Assistance technique",
+      "✔ Hébergement sécurisé",
+      "✔ Performances optimisées",
+      "✔ Support technique inclus",
+      "✔ Domaines & emails"
+    ],
+    "badge" => ["text" => "À partir de 49€/mois", "class" => "bg-secondary"],
+    "lottieId" => "formule-lottie-5"
+  ],
+  [
+    "title" => "Gestion Réseaux Sociaux",
+    "features" => [
+      "✔ Création de contenu",
+      "✔ Gestion des publications",
+      "✔ Analyse des performances",
+      "✔ Veille concurrentielle"
+    ],
+    "badge" => ["text" => "À partir de 190€/mois", "class" => "bg-dark"],
+    "lottieId" => "formule-lottie-6"
+  ],
 ];
-
 ?>
 
 
