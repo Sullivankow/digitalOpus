@@ -11,34 +11,34 @@ $projects = [
   [
     "title" => "Laeti Nails",
     "images" => ["asset/images/laetinails.png", "asset/images/laetinails2.png", "asset/images/laetinails3.png", "asset/images/laetinails1.png", "asset/images/laetinails4.png", "asset/images/laetinails5.png"],
-    "badges" => ["Illustrator", "Photoshop"],
-    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+    "badges" => ["HTML", "CSS", "React.js", "Typescript", "Lucid", "Tailwind", "MySql", "Docker"],
+    "description" => "Création du site vitrine pour Laeti Nails, incluant un design moderne et une galerie de réalisations. Responsive design, formulaire de contact et interface administrateur."
   ],
 
   [
     "title" => "Arcadia",
     "images" => ["asset/images/arcadia.png", "asset/images/arcadia1.png", "asset/images/arcadia2.png", "asset/images/arcadia3.png", "asset/images/arcadia4.png", "asset/images/arcadia5.png"],
-    "badges" => ["Illustrator", "Photoshop"],
-    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+    "badges" => ["HTML", "CSS", "Javascript", "PHP", "Symfony", "MySql", "Docker"],
+    "description" => "Création du site vitrine pour Arcadia pour la gestion de son parc zoologique. Design moderne et responsive, gestion du personnel, des animaux et des habitats.Formulaire de contact et gestion des horaires d'ouverture."
   ],
   [
     "title" => "Quai Antique",
     "images" => ["asset/images/qa.png", "asset/images/qa1.png", "asset/images/qa2.png", "asset/images/qa3.png", "asset/images/qa4.png", "asset/images/qa5.png"],
-    "badges" => ["Illustrator", "Photoshop"],
-    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+    "badges" => ["HTML", "CSS", "Bootstrap", "PHP", "MySql", "Symfony"],
+    "description" => "Création du site vitrine pour le restaurant Quai Antique, avec un design élégant et épuré. Responsive design, interface utilisateur, formulaire d'inscription et de contact"
   ],
   [
     "title" => "Portfolio",
     "images" => ["asset/images/portfolio.png", "asset/images/portfolio1.png", "asset/images/portfolio2.png", "asset/images/portfolio3.png", "asset/images/portfolio4.png", "asset/images/portfolio5.png"],
-    "badges" => ["Illustrator", "Photoshop"],
-    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+    "badges" => ["React.js", "Typescript", "Vite.js", "DaisyUi"],
+    "description" => "Création du Portfolio de SunDev afin de mettre en avant ses réalisations et ses compétences, responsive desgn et interface intuitive."
   ],
 
   [
     "title" => "CvUp",
     "images" => ["asset/images/cvup.png", "asset/images/cvup1.png", "asset/images/cvup2.png", "asset/images/cvup3.png", "asset/images/cvup4.png", "asset/images/cvup5.png"],
-    "badges" => ["Illustrator", "Photoshop"],
-    "description" => "Création de logo, charte graphique et supports de communication pour une marque dynamique."
+    "badges" => ["React.js", "DaisyUi", "Typescript"],
+    "description" => "Création du générateur de CvUp spécialement conçu pour les demandeurs d'emploi, étudiants et professionnels. Créée pour être utilisé sur pc uniquement, avec un design épuré, moderne et une interface intuitive."
   ],
 
 ]
