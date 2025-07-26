@@ -168,3 +168,38 @@ document.addEventListener('DOMContentLoaded', function () {
     this.style.display = 'none';
   });
 });
+
+
+
+// Carousel automatique pour les avis
+const carousel = document.querySelector('.reviews-carousel');
+const cards = document.querySelectorAll('.review-card');
+let index = 0;
+let interval = null;
+
+function showCards() {
+  carousel.scrollTo({
+    left: index * (cards[0].offsetWidth + 30),
+    behavior: 'smooth'
+  });
+}
+
+function nextCard() {
+  index = (index + 1) % cards.length;
+  showCards();
+}
+
+function startCarousel() {
+  interval = setInterval(nextCard, 3500);
+}
+
+function stopCarousel() {
+  clearInterval(interval);
+}
+
+carousel.addEventListener('mouseenter', stopCarousel);
+carousel.addEventListener('mouseleave', startCarousel);
+
+window.addEventListener('DOMContentLoaded', () => {
+  startCarousel();
+});
