@@ -17,7 +17,7 @@
       <p>Notre promesse : un accompagnement humain, transparent et 100% personnalisé. En collaborant avec SunDev, vous choisissez un partenaire de confiance, réactif et à l'écoute de vos objectifs.</p>
       <div class="d-grid gap-2 d-md-flex justify-content-center">
         <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contactez-nous</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Nos réalisations</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">FAQ</button>
       </div>
     </div>
   </div>

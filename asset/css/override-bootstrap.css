@@ -350,7 +350,7 @@ body {
 
 /*Pourquoi nous choisir */
 .why-choose-section {
-
+  background-color: white;
   padding-top: 60px;
   padding-bottom: 60px;
   /*Animation d'apparition de la section*/
@@ -377,7 +377,7 @@ body {
 }
 
 .why-choose-section h4 {
-  color: #fff;
+
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
