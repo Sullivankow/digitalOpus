@@ -155,20 +155,48 @@ document.addEventListener('DOMContentLoaded', function () {
   fullScreenImage.style.maxHeight = '90%';
   fullScreenContainer.appendChild(fullScreenImage);
 
+  const prevButton = document.createElement('button');
+  prevButton.textContent = '<';
+  prevButton.classList.add('modal-prev');
+  fullScreenContainer.appendChild(prevButton);
+
+  const nextButton = document.createElement('button');
+  nextButton.textContent = '>';
+  nextButton.classList.add('modal-next');
+  fullScreenContainer.appendChild(nextButton);
+
   document.body.appendChild(fullScreenContainer);
 
-  modalImages.forEach(image => {
+  let currentIndex = 0;
+
+  const updateModalImage = () => {
+    fullScreenImage.src = modalImages[currentIndex].src;
+  };
+
+  modalImages.forEach((image, index) => {
     image.addEventListener('click', function () {
-      fullScreenImage.src = this.src;
+      currentIndex = index;
+      updateModalImage();
       fullScreenContainer.style.display = 'flex';
     });
   });
 
-  fullScreenContainer.addEventListener('click', function () {
-    this.style.display = 'none';
+  prevButton.addEventListener('click', function () {
+    currentIndex = (currentIndex - 1 + modalImages.length) % modalImages.length;
+    updateModalImage();
+  });
+
+  nextButton.addEventListener('click', function () {
+    currentIndex = (currentIndex + 1) % modalImages.length;
+    updateModalImage();
+  });
+
+  fullScreenContainer.addEventListener('click', function (event) {
+    if (event.target === fullScreenContainer) {
+      this.style.display = 'none';
+    }
   });
 });
-
 
 //Fonction permettant de fermer le menu burger en cliant en dehors de celui-ci
 document.addEventListener('click', function (event) {
@@ -187,5 +215,42 @@ document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', function () {
     const menu = document.getElementById('navbarNav');
     menu.classList.remove('show');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const carousels = document.querySelectorAll('.real-card-carousel');
+
+  carousels.forEach(carousel => {
+    const images = carousel.querySelectorAll('img');
+    let currentIndex = 0;
+
+    const prevButton = document.createElement('button');
+    prevButton.textContent = '<';
+    prevButton.classList.add('carousel-prev');
+    carousel.appendChild(prevButton);
+
+    const nextButton = document.createElement('button');
+    nextButton.textContent = '>';
+    nextButton.classList.add('carousel-next');
+    carousel.appendChild(nextButton);
+
+    const updateCarousel = () => {
+      images.forEach((img, index) => {
+        img.style.display = index === currentIndex ? 'block' : 'none';
+      });
+    };
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
+    });
+
+    updateCarousel();
   });
 });
