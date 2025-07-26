@@ -177,10 +177,15 @@ body {
 }
 
 @media (max-width: 767px) {
+   .about-section {
+    margin-left: 0; /* Supprime la marge gauche */
+    text-align: center; /* Centre le contenu */
+  }
   .about-section #lottie-computer-aboutUs {
     display: block;
     margin: 0  auto;
     
+
   }
 }
 
