@@ -168,7 +168,7 @@ body {
   opacity: 0;
   transform: translateY(60px);
   transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.4, 2, .3, 1);
-  margin-left: 60px;
+
 }
 
 .about-section.visible {
@@ -177,14 +177,17 @@ body {
 }
 
 @media (max-width: 767px) {
-   .about-section {
-    margin-left: 0; /* Supprime la marge gauche */
-    text-align: center; /* Centre le contenu */
+  .about-section {
+    margin-left: 0;
+    /* Supprime la marge gauche */
+    text-align: center;
+    /* Centre le contenu */
   }
+
   .about-section #lottie-computer-aboutUs {
     display: block;
-    margin: 0  auto;
-    
+    margin: 0 auto;
+
 
   }
 }
@@ -271,10 +274,12 @@ body {
   position: relative;
   z-index: 3;
 }
+
 .real-card img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Uniformise les images */
+  object-fit: cover;
+  /* Uniformise les images */
 }
 
 .modal-content {

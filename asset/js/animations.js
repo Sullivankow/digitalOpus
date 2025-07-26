@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /*Ajout d'une fonctionnalité pour afficher une image sélectionnée en grand */
 document.addEventListener('DOMContentLoaded', function () {
-  const modalImages = document.querySelectorAll('.modal-image');
+  const modalImages = document.querySelectorAll('.modal img');
   const fullScreenContainer = document.createElement('div');
   fullScreenContainer.style.display = 'none';
   fullScreenContainer.style.position = 'fixed';
@@ -155,108 +155,16 @@ document.addEventListener('DOMContentLoaded', function () {
   fullScreenImage.style.maxHeight = '90%';
   fullScreenContainer.appendChild(fullScreenImage);
 
-  const prevButton = document.createElement('button');
-  prevButton.textContent = '<';
-  prevButton.classList.add('modal-prev');
-  fullScreenContainer.appendChild(prevButton);
-
-  const nextButton = document.createElement('button');
-  nextButton.textContent = '>';
-  nextButton.classList.add('modal-next');
-  fullScreenContainer.appendChild(nextButton);
-
   document.body.appendChild(fullScreenContainer);
 
-  let currentIndex = 0;
-  let currentImages = [];
-
-  const updateModalImage = () => {
-    fullScreenImage.src = currentImages[currentIndex].src;
-  };
-
-  modalImages.forEach((image) => {
+  modalImages.forEach(image => {
     image.addEventListener('click', function () {
-      const modalBody = this.closest('.modal-body');
-      if (!modalBody) return;
-      currentImages = Array.from(modalBody.querySelectorAll('.modal-image'));
-      currentIndex = currentImages.indexOf(this);
-      updateModalImage();
+      fullScreenImage.src = this.src;
       fullScreenContainer.style.display = 'flex';
     });
   });
 
-  prevButton.addEventListener('click', function (e) {
-    e.stopPropagation();
-    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-    updateModalImage();
-  });
-
-  nextButton.addEventListener('click', function (e) {
-    e.stopPropagation();
-    currentIndex = (currentIndex + 1) % currentImages.length;
-    updateModalImage();
-  });
-
-  fullScreenContainer.addEventListener('click', function (event) {
-    if (event.target === fullScreenContainer) {
-      this.style.display = 'none';
-    }
-  });
-});
-
-//Fonction permettant de fermer le menu burger en cliant en dehors de celui-ci
-document.addEventListener('click', function (event) {
-  const menu = document.getElementById('navbarNav');
-  const toggler = document.querySelector('.navbar-toggler');
-
-  // Vérifie si le clic est en dehors du menu et du bouton toggler
-  if (!menu.contains(event.target) && !toggler.contains(event.target)) {
-    menu.classList.remove('show');
-  }
-});
-
-
-//Permet d'aller à la section demandée après fermeture du menu burger
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', function () {
-    const menu = document.getElementById('navbarNav');
-    menu.classList.remove('show');
-  });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  const carousels = document.querySelectorAll('.real-card-carousel');
-
-  carousels.forEach(carousel => {
-    const images = carousel.querySelectorAll('img');
-    let currentIndex = 0;
-
-    const prevButton = document.createElement('button');
-    prevButton.textContent = '<';
-    prevButton.classList.add('carousel-prev');
-    carousel.appendChild(prevButton);
-
-    const nextButton = document.createElement('button');
-    nextButton.textContent = '>';
-    nextButton.classList.add('carousel-next');
-    carousel.appendChild(nextButton);
-
-    const updateCarousel = () => {
-      images.forEach((img, index) => {
-        img.style.display = index === currentIndex ? 'block' : 'none';
-      });
-    };
-
-    prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      updateCarousel();
-    });
-
-    nextButton.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      updateCarousel();
-    });
-
-    updateCarousel();
+  fullScreenContainer.addEventListener('click', function () {
+    this.style.display = 'none';
   });
 });
