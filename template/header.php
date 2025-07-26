@@ -39,7 +39,7 @@
               <a class="nav-link text-white" href="index.php">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="index.php#about">À propos</a>
+              <a class="nav-link text-white" href="index.php#whyChoose">Pourquoi nous</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="index.php#realisations">Réalisations</a>

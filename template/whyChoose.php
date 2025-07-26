@@ -1,5 +1,5 @@
 <!--Section pourquoi nous choisir-->
-<section class="why-choose-section py-5">
+<section id="whyChoose" class="why-choose-section py-5">
   <div class=" container">
     <h2 class="text-center text-black mb-5 display-4 fw-bold">Pourquoi nous choisir ?</h2>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
