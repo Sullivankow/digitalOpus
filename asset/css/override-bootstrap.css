@@ -146,18 +146,6 @@ body {
   background-color: white;
 }
 
-/*CAROUSEL*/
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.carousel-caption h1,
-.carousel-caption p {
-  color: #fff;
-}
 
 
 /*BOUTON PRINCIPAL*/
@@ -491,16 +479,25 @@ body {
   transition: left 0.2s, width 0.2s;
 }
 
+@media (max-width: 768px) {
+  .navbar-brand {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
+  .navbar-toggler {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-
-
-
-
-
-
-
-
+  .navbar {
+    position: relative;
+  }
+}
 
 /*Responsive mobile realisation*/
 @media (max-width: 767px) {

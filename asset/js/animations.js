@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
 
-  /*Ajout des évènements au clic sur les images de la modal pour effet carousel en plein écran*/
+  /*Ajout des évènements au clic sur les images de la modal pour effet carousel en plein écran pour la section realisations*/
   modalImages.forEach(image => {
     image.addEventListener('click', function () {
       const cardImages = Array.from(this.closest('.modal').querySelectorAll('.modal-image')).map(img => img.src);
