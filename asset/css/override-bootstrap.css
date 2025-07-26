@@ -264,6 +264,11 @@ body {
   position: relative;
   z-index: 3;
 }
+.real-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Uniformise les images */
+}
 
 .modal-content {
   background: #fff !important;
