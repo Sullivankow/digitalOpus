@@ -496,6 +496,44 @@ body {
 
   .navbar {
     position: relative;
+    height: 80px;
+    /* Ajuste la hauteur de la barre de navigation */
+  }
+
+  /* Styles pour le menu burger avec animation de glissement */
+  #navbarNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* Position initiale hors de l'écran */
+    width: 80%;
+    /* Ajuste la largeur du menu */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateX(0);
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  #navbarNav.show {
+    right: 0;
+    /* Fait apparaître le menu */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-link {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
 }
 
