@@ -149,23 +149,97 @@ document.addEventListener('DOMContentLoaded', function () {
   fullScreenContainer.style.justifyContent = 'center';
   fullScreenContainer.style.alignItems = 'center';
   fullScreenContainer.style.cursor = 'zoom-out';
+  fullScreenContainer.style.flexDirection = 'row';
+
+  // Flèche gauche
+  const leftArrow = document.createElement('button');
+  leftArrow.innerHTML = '&#10094;';
+  leftArrow.style.position = 'absolute';
+  leftArrow.style.left = '30px';
+  leftArrow.style.top = '50%';
+  leftArrow.style.transform = 'translateY(-50%)';
+  leftArrow.style.fontSize = '3rem';
+  leftArrow.style.color = 'white';
+  leftArrow.style.background = 'rgba(0,0,0,0.3)';
+  leftArrow.style.border = 'none';
+  leftArrow.style.borderRadius = '50%';
+  leftArrow.style.width = '56px';
+  leftArrow.style.height = '56px';
+  leftArrow.style.display = 'flex';
+  leftArrow.style.alignItems = 'center';
+  leftArrow.style.justifyContent = 'center';
+  leftArrow.style.cursor = 'pointer';
+  leftArrow.style.zIndex = '1060';
+
+  // Flèche droite
+  const rightArrow = document.createElement('button');
+  rightArrow.innerHTML = '&#10095;';
+  rightArrow.style.position = 'absolute';
+  rightArrow.style.right = '30px';
+  rightArrow.style.top = '50%';
+  rightArrow.style.transform = 'translateY(-50%)';
+  rightArrow.style.fontSize = '3rem';
+  rightArrow.style.color = 'white';
+  rightArrow.style.background = 'rgba(0,0,0,0.3)';
+  rightArrow.style.border = 'none';
+  rightArrow.style.borderRadius = '50%';
+  rightArrow.style.width = '56px';
+  rightArrow.style.height = '56px';
+  rightArrow.style.display = 'flex';
+  rightArrow.style.alignItems = 'center';
+  rightArrow.style.justifyContent = 'center';
+  rightArrow.style.cursor = 'pointer';
+  rightArrow.style.zIndex = '1060';
 
   const fullScreenImage = document.createElement('img');
   fullScreenImage.style.maxWidth = '90%';
   fullScreenImage.style.maxHeight = '90%';
+  fullScreenImage.style.margin = '0 auto';
+  fullScreenImage.style.display = 'block';
+  fullScreenContainer.appendChild(leftArrow);
   fullScreenContainer.appendChild(fullScreenImage);
+  fullScreenContainer.appendChild(rightArrow);
 
   document.body.appendChild(fullScreenContainer);
 
-  modalImages.forEach(image => {
-    image.addEventListener('click', function () {
-      fullScreenImage.src = this.src;
+  // Gestion des images du projet courant
+  let currentImages = [];
+  let currentIndex = 0;
+
+  modalImages.forEach((image, idx, arr) => {
+    image.addEventListener('click', function (e) {
+      // On récupère toutes les images de la même grille (même parent .row)
+      const row = this.closest('.row');
+      currentImages = Array.from(row.querySelectorAll('img'));
+      currentIndex = currentImages.indexOf(this);
+      showImage(currentIndex);
       fullScreenContainer.style.display = 'flex';
+      e.stopPropagation();
     });
   });
 
-  fullScreenContainer.addEventListener('click', function () {
-    this.style.display = 'none';
+  function showImage(idx) {
+    if (!currentImages.length) return;
+    if (idx < 0) idx = currentImages.length - 1;
+    if (idx >= currentImages.length) idx = 0;
+    currentIndex = idx;
+    fullScreenImage.src = currentImages[currentIndex].src;
+  }
+
+  leftArrow.addEventListener('click', function (e) {
+    e.stopPropagation();
+    showImage(currentIndex - 1);
+  });
+  rightArrow.addEventListener('click', function (e) {
+    e.stopPropagation();
+    showImage(currentIndex + 1);
+  });
+
+  // Fermer la lightbox en cliquant sur le fond
+  fullScreenContainer.addEventListener('click', function (e) {
+    if (e.target === fullScreenContainer) {
+      this.style.display = 'none';
+    }
   });
 });
 
@@ -219,3 +293,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Ouvre la première question par défaut
   if (items[0]) items[0].classList.add('open');
 });
+
+
+
+
+
+
+
+
+
