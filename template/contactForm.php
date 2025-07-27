@@ -12,15 +12,15 @@
           </h2>
           <form action="send_message.php" method="post" autocomplete="off">
             <div class="row g-3 mb-3">
-              <div class="col-12 col-md-6">
-                <label for="nom" class="form-label fw-semibold">Nom <span class="text-danger">*</span></label>
+              <div class="col-12 col-md-6 ">
+                <label for="nom" class="form-label text-black fw-semibold">Nom<span class="text-danger">*</span></label>
                 <div class="input-group">
                   <span class="input-group-text bg-light"><i class="bi bi-person"></i></span>
                   <input type="text" class="form-control" id="nom" name="nom" placeholder="Votre nom" required>
                 </div>
               </div>
               <div class="col-12 col-md-6">
-                <label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                <label for="email" class="form-label text-black fw-semibold">Email <span class="  text-danger">*</span></label>
                 <div class="input-group">
                   <span class="input-group-text bg-light"><i class="bi bi-envelope"></i></span>
                   <input type="email" class="form-control" id="email" name="email" placeholder="Votre email" required>
@@ -28,7 +28,7 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
+              <label for="message" class="form-label text-black fw-semibold">Message <span class=" text-danger">*</span></label>
               <div class="input-group">
                 <span class="input-group-text bg-light align-items-start"><i class="bi bi-chat-text"></i></span>
                 <textarea class="form-control" id="message" name="message" placeholder="Votre message..." rows="5" required></textarea>
