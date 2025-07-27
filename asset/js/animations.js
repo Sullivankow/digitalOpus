@@ -16,6 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
   );
   observer.observe(section);
 
+  // --- FERMETURE DU MENU BURGER EN CLIQUANT DANS LE VIDE (MOBILE) ---
+  const navbarNav = document.getElementById('navbarNav');
+  if (navbarNav) {
+    navbarNav.addEventListener('click', function (e) {
+      // Si on clique sur le fond (et pas sur un lien ou enfant du menu)
+      if (e.target === navbarNav) {
+        navbarNav.classList.remove('show');
+      }
+    });
+  }
+
   // Animation pour la section "realisations-section"
   const realisationsSection = document.querySelector(".realisations-section");
   if (realisationsSection) {
