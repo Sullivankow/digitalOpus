@@ -22,14 +22,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Envoi de l'email
         if (mail($to, $subject, $body, $headers)) {
 
-            header('Location: http://localhost:3000/index.php?success=1#contact');
+            header('Location: index.php?success=1#contact');
             exit;
         } else {
             $errors[] = "Erreur lors de l'envoi. Veuillez réessayer.";
         }
     }
 } else {
-    header('Location: http://localhost:3000/index.php?success=1#contact');
+    header('Location: index.php?success=1#contact');
     exit;
 }
 
