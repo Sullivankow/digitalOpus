@@ -6,6 +6,7 @@
         <li class="nav-item"><a href="index.php#about" class="nav-link px-2 text-white">À propos</a></li>
         <li class="nav-item"><a href="index.php#realisations" class="nav-link px-2 text-white">Réalisations</a></li>
         <li class="nav-item"><a href="index.php#formules" class="nav-link px-2 text-white">Formules</a></li>
+        <li class="nav-item"><a href="index.php#faq" class="nav-link px-2 text-white">FAQ</a></li>
         <li class="nav-item"><a href="index.php#contact" class="nav-link px-2 text-white">Contact</a></li>
     </ul>
     <p class="text-center text-white">© 2025 SunDev Agency, Tous droits réservés</p>
