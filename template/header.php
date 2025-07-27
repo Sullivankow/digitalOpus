@@ -48,6 +48,9 @@
               <a class="nav-link text-white" href="index.php#formules">Formules</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link text-white" href="index.php#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link text-white" href="index.php#contact">Contact</a>
             </li>
           </ul>

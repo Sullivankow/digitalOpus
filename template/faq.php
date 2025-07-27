@@ -1,5 +1,5 @@
 <!-- Section FAQ Création de Site -->
-<section class="faq-section" style="background: #f4f7fa; padding: 60px 0;">
+<section id="faq" class="faq-section" style="background: #f4f7fa; padding: 60px 0;">
     <div class="container">
         <h2 class="faq-title" style="text-align:center; font-weight:700; margin-bottom:40px; font-size:2.3rem; color:#1a2233;">Questions fréquentes sur la création de site</h2>
         <div class="faq-list">
