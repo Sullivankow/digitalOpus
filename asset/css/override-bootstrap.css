@@ -623,17 +623,25 @@ body {
   align-self: flex-end;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .reviews-carousel {
-    gap: 16px;
+    gap: 0;
+    padding: 0 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
   .review-card {
-    min-width: 260px;
-    max-width: 260px;
-    padding: 22px 14px;
+    min-width: 94vw;
+    max-width: 94vw;
+    box-sizing: border-box;
+    padding: 18px 6px 18px 6px;
+    scroll-snap-align: start;
   }
 }
+
+
 
 
 
