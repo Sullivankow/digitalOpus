@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             whyChooseSection.classList.add("visible");
-            oberserverSection.unobserve(observewhyChoose);
+            observerWhyChoose.unobserve(whyChooseSection);
           }
         });
       },
