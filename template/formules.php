@@ -150,7 +150,7 @@ $options = [
     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mb-5">
       <?php foreach ($offres_vitrine as $formule): ?>
         <div class="col">
-          <div class="card h-100 bg-transparent border-0 shadow-lg text-center text-white">
+          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
               <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
@@ -171,7 +171,7 @@ $options = [
     <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mb-5">
       <?php foreach ($offres_catalogue as $formule): ?>
         <div class="col">
-          <div class="card h-100 bg-transparent border-0 shadow-lg text-center text-white">
+          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
               <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
@@ -192,7 +192,7 @@ $options = [
     <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mb-5">
       <?php foreach ($offres_ecommerce as $formule): ?>
         <div class="col">
-          <div class="card h-100 bg-transparent border-0 shadow-lg text-center text-white">
+          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
               <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
@@ -213,7 +213,7 @@ $options = [
     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mb-3">
       <?php foreach ($options as $formule): ?>
         <div class="col">
-          <div class="card h-100 bg-transparent border-0 shadow-lg text-center text-white">
+          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
               <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
