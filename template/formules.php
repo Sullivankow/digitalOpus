@@ -107,9 +107,11 @@ $offres_ecommerce = [
 
 $options = [
   [
-    'title' => 'Communication digitale /Réseaux sociaux',
+    'title' => 'Communication digitale /Réseaux sociaux(optionnel)',
     'features' => [
       '✔ 4 publications/mois, création visuelle, planification',
+      '✔ création visuelle',
+      '✔ planification',
 
     ],
     'badge' => ['text' => '300€/mois', 'class' => 'bg-info'],
@@ -153,13 +155,13 @@ $options = [
           <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
+              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
               <ul class="list-unstyled mb-3">
                 <?php foreach ($formule['features'] as $feature): ?>
                   <li><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
@@ -174,13 +176,13 @@ $options = [
           <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
+              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
               <ul class="list-unstyled mb-3">
                 <?php foreach ($formule['features'] as $feature): ?>
                   <li><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2" <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
@@ -195,13 +197,13 @@ $options = [
           <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
+              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
               <ul class="list-unstyled mb-3">
                 <?php foreach ($formule['features'] as $feature): ?>
                   <li><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2" <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
@@ -216,13 +218,13 @@ $options = [
           <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
             <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
             <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3"><?= $formule['title'] ?></h4>
+              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
               <ul class="list-unstyled mb-3">
                 <?php foreach ($formule['features'] as $feature): ?>
                   <li><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2" <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>

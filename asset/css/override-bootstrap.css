@@ -623,6 +623,20 @@ body {
   align-self: flex-end;
 }
 
+/* Badge prix dégradé comme les boutons */
+.prix-badge {
+  background: linear-gradient(90deg, #2575fc 0%, #9B4F8F 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 12px rgba(30, 40, 90, 0.10);
+  padding: 0.6em 1.2em;
+  font-size: 1.1em;
+  border-radius: 2em;
+  display: inline-block;
+}
+
 @media (max-width: 600px) {
   .reviews-carousel {
     gap: 0;
