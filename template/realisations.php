@@ -2,7 +2,7 @@
 /*Je créer mon tableau de projets pour la section réalisation et les insérer de manière dynamique"*/
 $projects = [
   [
-    "title" => "Projet Øverst",
+    "title" => " Øverst",
     "images" => ["asset/images/overst.png", "asset/images/overst1.png", "asset/images/overst2.png", "asset/images/overst3.png", "asset/images/overst4.png", "asset/images/overst5.png"],
     "badges" => ["HTML", "css/Tailwind", "Typescript", "React.js", "Lucid"],
     "description" => "Site vitrine moderne pour l'artiste électro pop Øverst, design responsive avec lecteur audio, vidéo et formulaire de contact."
@@ -61,7 +61,7 @@ $projects = [
           <div class="real-card h-100 shadow-lg">
             <img src="<?= $project['images'][0] ?>" class="card-img-top" alt="<?= $project['title'] ?>">
             <div class="card-body p-4">
-              <h5 class="card-title mb-3"><?= $project['title'] ?></h5>
+              <h5 class="card-title text-black mb-3"><?= $project['title'] ?></h5>
               <div class="mb-3">
                 <?php foreach ($project['badges'] as $badge): ?>
                   <span class="badge bg-primary me-1"><?= $badge ?></span>
