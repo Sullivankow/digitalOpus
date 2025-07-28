@@ -1,37 +1,43 @@
 <?php
 $offres_vitrine = [
   [
-    'title' => 'Vitrine Essentiel',
+    'title' => 'Vitrine Essentielle',
     'features' => [
-      '✔ 1 à 3 pages',
-      '✔ Design responsive',
+      '✔ Jusqu\'à 5 pages (Accueil, Services, À propos, Contact, etc.)',
+      '✔ Design responsive (mobile/tablette)',
       '✔ Formulaire de contact',
       '✔ SEO de base',
+
+
     ],
-    'badge' => ['text' => 'À partir de 590€', 'class' => 'bg-primary'],
+    'badge' => ['text' => 'À partir de 990€', 'class' => 'bg-primary'],
     'lottieId' => 'formule-lottie-1',
   ],
   [
     'title' => 'Vitrine Pro',
     'features' => [
-      '✔ 4 à 8 pages',
-      '✔ Design sur-mesure',
+      '✔ Jusqu\'à 7 pages',
+      '✔ Interface d’administration (changer textes, images…) ',
+      '✔ Design sur-mesure et responsive',
       '✔ Animations',
       '✔ Formulaire avancé',
-      '✔ SEO optimisé',
+      '✔ SEO optimisé + RGPD',
+      '✔ Formation de prise en main (1h)',
     ],
-    'badge' => ['text' => 'À partir de 990€', 'class' => 'bg-success'],
+    'badge' => ['text' => 'À partir de 2440€', 'class' => 'bg-success'],
     'lottieId' => 'formule-lottie-2',
   ],
   [
-    'title' => 'Vitrine Premium',
+    'title' => 'Vitrine Institution (Mairie, collectivités, associations)',
     'features' => [
-      '✔ Pages illimitées',
-      '✔ Blog & actualités',
+      '✔ Jusqu\'à 10 pages  (Accueil, Actus, Services, Démarches, Contact, etc.)',
+      '✔ Blog & actualités ou d\'annonces',
+      '✔ Agenda / évènements',
       '✔ Réseaux sociaux',
       '✔ SEO avancé',
+      '✔ Hébergement possible en collectivité',
     ],
-    'badge' => ['text' => 'À partir de 1490€', 'class' => 'bg-warning text-dark'],
+    'badge' => ['text' => 'À partir de 3990€', 'class' => 'bg-warning text-dark'],
     'lottieId' => 'formule-lottie-3',
   ],
 ];
@@ -41,22 +47,29 @@ $offres_catalogue = [
     'title' => 'Catalogue Start',
     'features' => [
       '✔ Jusqu’à 20 produits',
+      '✔ Organisation par catégories',
+      '✔ Fiche produit : image, description, prix indicatif',
+      '✔ Admin simple pour ajouter/supprimer produits',
       '✔ Sans paiement',
+      '✔ SEO produit de base
+',
       '✔ Gestion simple',
       '✔ Design responsive',
     ],
-    'badge' => ['text' => 'À partir de 1290€', 'class' => 'bg-primary'],
+    'badge' => ['text' => 'À partir de 1490€', 'class' => 'bg-primary'],
     'lottieId' => 'formule-lottie-4',
   ],
   [
-    'title' => 'Catalogue Pro',
+    'title' => 'Catalogue Évolutif',
     'features' => [
       '✔ Produits illimités',
-      '✔ Filtres avancés',
-      '✔ Fiches détaillées',
+      '✔ Filtres avancés, par catégories, prix, etc',
+      '✔ Galerie multiple images / documents',
       '✔ Gestion back-office',
+      '✔ Moteur de recherche intégré',
+      '✔ SEO + performance améliorée',
     ],
-    'badge' => ['text' => 'À partir de 1790€', 'class' => 'bg-success'],
+    'badge' => ['text' => 'À partir de 2990€', 'class' => 'bg-success'],
     'lottieId' => 'formule-lottie-5',
   ],
 ];
@@ -65,58 +78,62 @@ $offres_ecommerce = [
   [
     'title' => 'E-Commerce Essentiel',
     'features' => [
-      '✔ Jusqu’à 20 produits',
-      '✔ Paiement sécurisé',
+      '✔ Jusqu’à 30 produits',
+      '✔ Paiement sécurisé (Stripe, Paypal)',
       '✔ Gestion commandes',
-      '✔ Responsive',
+      '✔ Interface d\'administration',
+      '✔ Responsive Design',
+      '✔ Email de confirmation client',
     ],
-    'badge' => ['text' => 'À partir de 1990€', 'class' => 'bg-primary'],
+    'badge' => ['text' => 'À partir de 2490€', 'class' => 'bg-primary'],
     'lottieId' => 'formule-lottie-6',
   ],
   [
-    'title' => 'E-Commerce Pro',
+    'title' => 'E-Commerce Pro+',
     'features' => [
       '✔ Produits illimités',
       '✔ Gestion stocks',
-      '✔ Codes promo',
+      '✔ Codes promo, ventes flash',
+      '✔ Livraison, retrait magasin',
+      '✔ Facturation automatique',
       '✔ Analytics',
-      '✔ SEO avancé',
-      '✔ Support technique',
+      '✔ SEO avancé + Google Analytics',
+      '✔ Formation (2h)',
     ],
-    'badge' => ['text' => 'À partir de 2990€', 'class' => 'bg-success'],
+    'badge' => ['text' => 'À partir de 4990€', 'class' => 'bg-success'],
     'lottieId' => 'formule-lottie-1',
   ],
 ];
 
 $options = [
   [
-    'title' => 'Rédaction de contenu',
+    'title' => 'Communication digitale /Réseaux sociaux',
     'features' => [
-      '✔ Textes professionnels',
-      '✔ Optimisés SEO',
+      '✔ 4 publications/mois, création visuelle, planification',
+
     ],
-    'badge' => ['text' => 'Sur devis', 'class' => 'bg-info'],
+    'badge' => ['text' => '300€/mois', 'class' => 'bg-info'],
     'lottieId' => 'formule-lottie-2',
   ],
   [
-    'title' => 'Maintenance & Sécurité',
+    'title' => 'Maintenance & Sécurité(optionnel)',
     'features' => [
       '✔ Sauvegardes',
       '✔ Mises à jour',
       '✔ Surveillance sécurité',
       '✔ Assistance technique',
     ],
-    'badge' => ['text' => 'À partir de 29€/mois', 'class' => 'bg-secondary'],
+    'badge' => ['text' => ' 50€/mois', 'class' => 'bg-secondary'],
     'lottieId' => 'formule-lottie-3',
   ],
   [
-    'title' => 'Référencement avancé (SEO)',
+    'title' => 'Hébergement & nom de domaine',
     'features' => [
-      '✔ Optimisation technique',
-      '✔ Netlinking',
-      '✔ Audit complet',
+      '✔ Nom de domaine : 15 € HT / an',
+      '✔ Hébergement standard : 400 € HT / an',
+      '✔ Hébergement e‑commerce : 600 € HT / an',
     ],
-    'badge' => ['text' => 'Sur devis', 'class' => 'bg-warning text-dark'],
+    'badge' => ['text' => ' Optionnel', 'class' => 'bg-secondary'],
     'lottieId' => 'formule-lottie-4',
   ],
 ];
