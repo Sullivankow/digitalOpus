@@ -24,7 +24,7 @@ $offres_vitrine = [
       '✔ SEO optimisé + RGPD',
       '✔ Formation de prise en main (1h)',
     ],
-    'badge' => ['text' => 'À partir de 2440€', 'class' => 'bg-success'],
+    'badge' => ['text' => 'À partir de 2490€', 'class' => 'bg-success'],
     'lottieId' => 'formule-lottie-2',
   ],
   [
