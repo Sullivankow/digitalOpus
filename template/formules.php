@@ -107,7 +107,7 @@ $offres_ecommerce = [
 
 $options = [
   [
-    'title' => 'Communication digitale /Réseaux sociaux(optionnel)',
+    'title' => 'Communication digitale /Réseaux sociaux (optionnel)',
     'features' => [
       '✔ 4 publications/mois  ',
       '✔ Rédaction de textes optimisés pour l’engagement ',
@@ -121,7 +121,7 @@ $options = [
     'lottieId' => 'formule-lottie-2',
   ],
   [
-    'title' => 'Maintenance & Sécurité(optionnel)',
+    'title' => 'Maintenance & Sécurité (optionnel)',
     'features' => [
       '✔ Sauvegardes',
       '✔ Mises à jour',
@@ -132,14 +132,14 @@ $options = [
     'lottieId' => 'formule-lottie-3',
   ],
   [
-    'title' => 'Hébergement & nom de domaine',
+    'title' => 'Hébergement & nom de domaine (optionnel)',
     'features' => [
       '✔ Nom de domaine : 15 € HT / an',
       '✔ Hébergement standard : 400 € HT / an',
       '✔ Hébergement catalogue : 500 € HT / an',
       '✔ Hébergement e‑commerce : 600 € HT / an',
     ],
-    'badge' => ['text' => ' Optionnel', 'class' => 'bg-secondary'],
+    'badge' => ['text' => ' à partir de 400€', 'class' => 'bg-secondary'],
     'lottieId' => 'formule-lottie-4',
   ],
 ];
