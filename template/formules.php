@@ -35,7 +35,7 @@ $offres_vitrine = [
       '✔ Agenda / évènements',
       '✔ Réseaux sociaux',
       '✔ SEO avancé',
-      '✔ Hébergement possible en collectivité',
+
     ],
     'badge' => ['text' => 'À partir de 3990€', 'class' => 'bg-warning text-dark'],
     'lottieId' => 'formule-lottie-3',
@@ -109,9 +109,12 @@ $options = [
   [
     'title' => 'Communication digitale /Réseaux sociaux(optionnel)',
     'features' => [
-      '✔ 4 publications/mois, création visuelle, planification',
-      '✔ création visuelle',
-      '✔ planification',
+      '✔ 4 publications/mois  ',
+      '✔ Rédaction de textes optimisés pour l’engagement ',
+      '✔ Veille et analyse des performances mensuelles ',
+      '✔ Réponse aux commentaires et messages  ',
+      '✔ Création visuelle',
+
 
     ],
     'badge' => ['text' => '300€/mois', 'class' => 'bg-info'],
@@ -133,6 +136,7 @@ $options = [
     'features' => [
       '✔ Nom de domaine : 15 € HT / an',
       '✔ Hébergement standard : 400 € HT / an',
+      '✔ Hébergement catalogue : 500 € HT / an',
       '✔ Hébergement e‑commerce : 600 € HT / an',
     ],
     'badge' => ['text' => ' Optionnel', 'class' => 'bg-secondary'],
@@ -165,6 +169,13 @@ $options = [
           </div>
         </div>
       <?php endforeach; ?>
+      <div class="row">
+        <div class="col-12 text-center mt-2">
+          <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
+            <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 400€ et hors évolution du site.</i>
+          </small>
+        </div>
+      </div>
     </div>
 
     <!-- Offres site catalogue -->
@@ -185,53 +196,59 @@ $options = [
           </div>
         </div>
       <?php endforeach; ?>
-    </div>
+      <div class="row">
+        <div class="col-12 text-center mt-2">
+          <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
+            <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 500€ et hors évolution du site.</i>
+          </small>
+        </div>
 
-    <!-- Offres E-Commerce -->
-    <h3 class="text-white mt-4 mb-3">Offres E-Commerce</h3>
-    <div class="row justify-content-center mb-5">
-      <?php foreach ($offres_ecommerce as $formule): ?>
-        <div class="col-12 col-md-6 d-flex align-items-stretch mb-4">
-          <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
-              <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
-                <?php foreach ($formule['features'] as $feature): ?>
-                  <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
-                <?php endforeach; ?>
-              </ul>
-              <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
+        <!-- Offres E-Commerce -->
+        <h3 class="text-white mt-4 mb-3">Offres E-Commerce</h3>
+        <div class="row justify-content-center mb-5">
+          <?php foreach ($offres_ecommerce as $formule): ?>
+            <div class="col-12 col-md-6 d-flex align-items-stretch mb-4">
+              <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
+                <div class="card-body d-flex flex-column justify-content-between">
+                  <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
+                  <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
+                    <?php foreach ($formule['features'] as $feature): ?>
+                      <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
+                    <?php endforeach; ?>
+                  </ul>
+                  <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+          <div class="row">
+            <div class="row">
+              <div class="col-12 text-center mt-2">
+                <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
+                  <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 600€ et hors évolution du site.</i>
+                </small>
+              </div>
+            </div>
+
+            <!-- Options complémentaires -->
+            <h3 class="text-white mt-4 mb-3">Options complémentaires (à la carte)</h3>
+            <div class="row justify-content-center mb-3">
+              <?php foreach ($options as $formule): ?>
+                <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch mb-4">
+                  <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                      <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
+                      <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
+                        <?php foreach ($formule['features'] as $feature): ?>
+                          <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
+                        <?php endforeach; ?>
+                      </ul>
+                      <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
+                    </div>
+                  </div>
+                </div>
+              <?php endforeach; ?>
             </div>
           </div>
-        </div>
-      <?php endforeach; ?>
-    </div>
 
-    <!-- Options complémentaires -->
-    <h3 class="text-white mt-4 mb-3">Options complémentaires (à la carte)</h3>
-    <div class="row justify-content-center mb-3">
-      <?php foreach ($options as $formule): ?>
-        <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch mb-4">
-          <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
-            <div class="card-body d-flex flex-column justify-content-between">
-              <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
-              <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
-                <?php foreach ($formule['features'] as $feature): ?>
-                  <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
-                <?php endforeach; ?>
-              </ul>
-              <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
-            </div>
-          </div>
-        </div>
-      <?php endforeach; ?>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 text-center mt-2">
-      <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
-        <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 400 €.</i>
-      </small>
-    </div>
-  </div>
 </section>
