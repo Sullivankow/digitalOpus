@@ -227,4 +227,11 @@ $options = [
       <?php endforeach; ?>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12 text-center mt-2">
+      <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
+        <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 400 €.</i>
+      </small>
+    </div>
+  </div>
 </section>
