@@ -39,71 +39,59 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-/*Animation dessin dans le container à propos de nous*/
-lottie.loadAnimation({
-  container: document.getElementById("lottie-computer-aboutUs"),
-  renderer: "svg",
-  loop: true,
-  autoplay: true,
-  path: "https://lottie.host/08eb5f50-45c8-43de-b235-5af2173cd158/TUhJ7OHOOC.json", // URL de l’animation Lottie choisie
-});
-
-/*animation pour la section pourquoi nous choisir*/
-document.addEventListener("DOMContentLoaded", function () {
-  if (window.lottie) {
+// Fonction utilitaire pour charger une animation Lottie
+function loadLottieAnimation(containerId, path) {
+  const container = document.getElementById(containerId);
+  if (container && window.lottie) {
     lottie.loadAnimation({
-      container: document.getElementById("why-lottie-1"),
+      container,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: "https://lottie.host/bf9a3577-8a1b-4689-9555-a4bc1e469cbd/cdtWU7rXN8.json",
+      path,
     });
-    lottie.loadAnimation({
-      container: document.getElementById("why-lottie-2"),
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      path: "https://lottie.host/8d8e9d81-4c87-40c6-820f-380d3b488e52/vw7TCaHpni.json",
-    });
-    lottie.loadAnimation({
-      container: document.getElementById("why-lottie-3"),
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      path: "https://lottie.host/3fedd853-b8bc-4231-a181-463e227789a1/PiuotuEi7g.json",
-    });
-    lottie.loadAnimation({
-      container: document.getElementById("why-lottie-4"),
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      path: "https://lottie.host/028b174f-dc2a-467e-bd26-6a69c718d0e6/gpbxaAuiRQ.json",
-    });
-    /*Animation pour la section formules*/
-    if (window.lottie) {
-      lottie.loadAnimation({
-        container: document.getElementById("formule-lottie-1"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "https://lottie.host/14504404-d3df-4e5e-b077-fdaa32c932ee/sDEw2NzTwT.json", // Animation vitrine
-      });
-      lottie.loadAnimation({
-        container: document.getElementById("formule-lottie-2"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "https://lottie.host/ab259f1f-9572-4464-a834-996ea2a268bf/i8tJo5mxKb.json", // Animation e-commerce
-      });
-      lottie.loadAnimation({
-        container: document.getElementById("formule-lottie-3"),
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: "https://lottie.host/040a2a07-df1c-4859-974b-37c2e90914ab/eAV2lDMDI0.json", // Animation sur-mesure
-      });
-    }
   }
+}
+
+// Configurations des animations Lottie
+const lottieAnimations = [
+  {
+    id: "lottie-computer-aboutUs",
+    path: "https://lottie.host/08eb5f50-45c8-43de-b235-5af2173cd158/TUhJ7OHOOC.json",
+  },
+  {
+    id: "why-lottie-1",
+    path: "https://lottie.host/bf9a3577-8a1b-4689-9555-a4bc1e469cbd/cdtWU7rXN8.json",
+  },
+  {
+    id: "why-lottie-2",
+    path: "https://lottie.host/8d8e9d81-4c87-40c6-820f-380d3b488e52/vw7TCaHpni.json",
+  },
+  {
+    id: "why-lottie-3",
+    path: "https://lottie.host/3fedd853-b8bc-4231-a181-463e227789a1/PiuotuEi7g.json",
+  },
+  {
+    id: "why-lottie-4",
+    path: "https://lottie.host/028b174f-dc2a-467e-bd26-6a69c718d0e6/gpbxaAuiRQ.json",
+  },
+  {
+    id: "formule-lottie-1",
+    path: "https://lottie.host/14504404-d3df-4e5e-b077-fdaa32c932ee/sDEw2NzTwT.json",
+  },
+  {
+    id: "formule-lottie-2",
+    path: "https://lottie.host/ab259f1f-9572-4464-a834-996ea2a268bf/i8tJo5mxKb.json",
+  },
+  {
+    id: "formule-lottie-3",
+    path: "https://lottie.host/040a2a07-df1c-4859-974b-37c2e90914ab/eAV2lDMDI0.json",
+  },
+];
+
+document.addEventListener("DOMContentLoaded", function () {
+  lottieAnimations.forEach((anim) => loadLottieAnimation(anim.id, anim.path));
+  // ...le reste de ton code...
 });
 
 /*Ajout d'une fonctionnalité pour afficher une image sélectionnée en grand */
