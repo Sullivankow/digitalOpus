@@ -109,6 +109,23 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     observerfaq.observe(faqSection);
   }
+
+  /*Animation d'apparition de la section contact*/
+  const contactSection = document.querySelector(".contact-section");
+  if (contactSection) {
+    const observerContact = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            contactSection.classList.add("visible");
+            observerContact.unobserve(contactSection);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observerContact.observe(contactSection);
+  }
 });
 
 /*Animation dessin dans le container à propos de nous*/
