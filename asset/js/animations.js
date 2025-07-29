@@ -93,6 +93,22 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     observerReviews.observe(reviewsSection);
   }
+  /*Animation d'apparition de la section faq*/
+  const faqSection = document.querySelector(".faq-section");
+  if (faqSection) {
+    const observerfaq = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            faqSection.classList.add("visible");
+            observerfaq.unobserve(faqSection);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observerfaq.observe(faqSection);
+  }
 });
 
 /*Animation dessin dans le container à propos de nous*/
