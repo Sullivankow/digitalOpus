@@ -139,7 +139,7 @@ $options = [
       '✔ Hébergement catalogue : 500 € HT / an',
       '✔ Hébergement e‑commerce : 600 € HT / an',
     ],
-    'badge' => ['text' => ' à partir de 400€', 'class' => 'bg-secondary'],
+    'badge' => ['text' => ' dès 400€', 'class' => 'bg-secondary'],
     'lottieId' => 'formule-lottie-4',
   ],
 ];
@@ -164,7 +164,7 @@ $options = [
                   <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2 mx-auto w-100" style="max-width:180px; width:100%; font-size:1.08rem; word-break:break-word; white-space:normal;"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
