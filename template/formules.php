@@ -149,19 +149,18 @@ $options = [
 
     <!-- Offres site vitrine -->
     <h3 class="text-white mt-4 mb-3">Offres Site Vitrine</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mb-5">
+    <div class="row justify-content-center mb-5">
       <?php foreach ($offres_vitrine as $formule): ?>
-        <div class="col">
-          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
-            <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
-            <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
-              <ul class="list-unstyled mb-3">
+        <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch mb-4">
+          <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
+              <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
                 <?php foreach ($formule['features'] as $feature): ?>
-                  <li><?= $feature ?></li>
+                  <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge prix-badge fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
@@ -170,19 +169,18 @@ $options = [
 
     <!-- Offres site catalogue -->
     <h3 class="text-white mt-4 mb-3">Offres Site Catalogue (sans paiement)</h3>
-    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mb-5">
+    <div class="row justify-content-center mb-5">
       <?php foreach ($offres_catalogue as $formule): ?>
-        <div class="col">
-          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
-            <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
-            <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
-              <ul class="list-unstyled mb-3">
+        <div class="col-12 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
+              <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
                 <?php foreach ($formule['features'] as $feature): ?>
-                  <li><?= $feature ?></li>
+                  <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge prix-badge fs-5 mb-2" <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
@@ -191,19 +189,18 @@ $options = [
 
     <!-- Offres E-Commerce -->
     <h3 class="text-white mt-4 mb-3">Offres E-Commerce</h3>
-    <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center mb-5">
+    <div class="row justify-content-center mb-5">
       <?php foreach ($offres_ecommerce as $formule): ?>
-        <div class="col">
-          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
-            <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
-            <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
-              <ul class="list-unstyled mb-3">
+        <div class="col-12 col-md-6 d-flex align-items-stretch mb-4">
+          <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
+              <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
                 <?php foreach ($formule['features'] as $feature): ?>
-                  <li><?= $feature ?></li>
+                  <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge prix-badge fs-5 mb-2" <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
@@ -212,19 +209,18 @@ $options = [
 
     <!-- Options complémentaires -->
     <h3 class="text-white mt-4 mb-3">Options complémentaires (à la carte)</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center mb-3">
+    <div class="row justify-content-center mb-3">
       <?php foreach ($options as $formule): ?>
-        <div class="col">
-          <div class="card h-100 bg-white border-0 shadow-lg text-center text-dark">
-            <div class="formule-lottie mx-auto mt-4" id="<?= $formule['lottieId'] ?>"></div>
-            <div class="card-body">
-              <h4 class="card-title fw-semibold mb-3 text-dark"><?= $formule['title'] ?></h4>
-              <ul class="list-unstyled mb-3">
+        <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch mb-4">
+          <div class="card w-100 bg-white border-0 shadow-lg text-center text-dark p-3 rounded-4">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h4 class="card-title fw-bold mb-3 text-dark" style="font-size:1.35rem; letter-spacing:0.5px;"><?= $formule['title'] ?></h4>
+              <ul class="list-unstyled mb-3 text-start mx-auto" style="max-width:90%;">
                 <?php foreach ($formule['features'] as $feature): ?>
-                  <li><?= $feature ?></li>
+                  <li class="mb-1" style="font-size:1.07rem;"><?= $feature ?></li>
                 <?php endforeach; ?>
               </ul>
-              <span class="badge prix-badge fs-5 mb-2" <?= $formule['badge']['class'] ?> fs-5 mb-2"><?= $formule['badge']['text'] ?></span>
+              <span class="badge prix-badge fs-5 mb-2 mx-auto" style="min-width:120px; font-size:1.15rem;"><?= $formule['badge']['text'] ?></span>
             </div>
           </div>
         </div>
