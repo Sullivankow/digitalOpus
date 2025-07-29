@@ -1,20 +1,31 @@
 /*Animation du container à propos de nous*/
 
+function observeSection(selector) {
+  const section = document.querySelector(selector);
+  if (section) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            section.classList.add("visible");
+            observer.unobserve(section);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(section);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-  const section = document.querySelector(".about-section  ");
-  if (!section) return;
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          section.classList.add("visible");
-          observer.unobserve(section);
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
-  observer.observe(section);
+  observeSection(".about-section");
+  observeSection(".realisations-section");
+  observeSection(".why-choose-section");
+  observeSection(".formules-section");
+  observeSection(".google-reviews-section");
+  observeSection(".faq-section");
+  observeSection(".contact-section");
 
   // --- FERMETURE DU MENU BURGER EN CLIQUANT DANS LE VIDE (MOBILE) ---
   const navbarNav = document.getElementById("navbarNav");
@@ -25,106 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         navbarNav.classList.remove("show");
       }
     });
-  }
-
-  // Animation pour la section "realisations-section"
-  const realisationsSection = document.querySelector(".realisations-section");
-  if (realisationsSection) {
-    const observerRealisations = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            realisationsSection.classList.add("visible");
-            observerRealisations.unobserve(realisationsSection);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    observerRealisations.observe(realisationsSection);
-  }
-
-  const whyChooseSection = document.querySelector(".why-choose-section");
-  if (whyChooseSection) {
-    const observerWhyChoose = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            whyChooseSection.classList.add("visible");
-            observerWhyChoose.unobserve(whyChooseSection);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    observerWhyChoose.observe(whyChooseSection);
-  }
-
-  /*Animation d'apparition de la section formule*/
-  const formulesSection = document.querySelector(".formules-section");
-  if (formulesSection) {
-    const observerFormules = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            formulesSection.classList.add("visible");
-            observerFormules.unobserve(formulesSection);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    observerFormules.observe(formulesSection);
-  }
-
-  /*Animation d'apparition de la section avis*/
-  const reviewsSection = document.querySelector(".google-reviews-section");
-  if (reviewsSection) {
-    const observerReviews = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            reviewsSection.classList.add("visible");
-            observerReviews.unobserve(reviewsSection);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    observerReviews.observe(reviewsSection);
-  }
-  /*Animation d'apparition de la section faq*/
-  const faqSection = document.querySelector(".faq-section");
-  if (faqSection) {
-    const observerfaq = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            faqSection.classList.add("visible");
-            observerfaq.unobserve(faqSection);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    observerfaq.observe(faqSection);
-  }
-
-  /*Animation d'apparition de la section contact*/
-  const contactSection = document.querySelector(".contact-section");
-  if (contactSection) {
-    const observerContact = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            contactSection.classList.add("visible");
-            observerContact.unobserve(contactSection);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    observerContact.observe(contactSection);
   }
 });
 
