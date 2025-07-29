@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
   observer.observe(section);
 
   // --- FERMETURE DU MENU BURGER EN CLIQUANT DANS LE VIDE (MOBILE) ---
-  const navbarNav = document.getElementById('navbarNav');
+  const navbarNav = document.getElementById("navbarNav");
   if (navbarNav) {
-    navbarNav.addEventListener('click', function (e) {
+    navbarNav.addEventListener("click", function (e) {
       // Si on clique sur le fond (et pas sur un lien ou enfant du menu)
       if (e.target === navbarNav) {
-        navbarNav.classList.remove('show');
+        navbarNav.classList.remove("show");
       }
     });
   }
@@ -75,6 +75,23 @@ document.addEventListener("DOMContentLoaded", function () {
       { threshold: 0.2 }
     );
     observerFormules.observe(formulesSection);
+  }
+
+  /*Animation d'apparition de la section avis*/
+  const reviewsSection = document.querySelector(".google-reviews-section");
+  if (reviewsSection) {
+    const observerReviews = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            reviewsSection.classList.add("visible");
+            observerReviews.unobserve(reviewsSection);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observerReviews.observe(reviewsSection);
   }
 });
 
@@ -146,67 +163,67 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*Ajout d'une fonctionnalité pour afficher une image sélectionnée en grand */
-document.addEventListener('DOMContentLoaded', function () {
-  const modalImages = document.querySelectorAll('.modal img');
-  const fullScreenContainer = document.createElement('div');
-  fullScreenContainer.style.display = 'none';
-  fullScreenContainer.style.position = 'fixed';
-  fullScreenContainer.style.top = '0';
-  fullScreenContainer.style.left = '0';
-  fullScreenContainer.style.width = '100%';
-  fullScreenContainer.style.height = '100%';
-  fullScreenContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-  fullScreenContainer.style.zIndex = '1050';
-  fullScreenContainer.style.justifyContent = 'center';
-  fullScreenContainer.style.alignItems = 'center';
-  fullScreenContainer.style.cursor = 'zoom-out';
-  fullScreenContainer.style.flexDirection = 'row';
+document.addEventListener("DOMContentLoaded", function () {
+  const modalImages = document.querySelectorAll(".modal img");
+  const fullScreenContainer = document.createElement("div");
+  fullScreenContainer.style.display = "none";
+  fullScreenContainer.style.position = "fixed";
+  fullScreenContainer.style.top = "0";
+  fullScreenContainer.style.left = "0";
+  fullScreenContainer.style.width = "100%";
+  fullScreenContainer.style.height = "100%";
+  fullScreenContainer.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  fullScreenContainer.style.zIndex = "1050";
+  fullScreenContainer.style.justifyContent = "center";
+  fullScreenContainer.style.alignItems = "center";
+  fullScreenContainer.style.cursor = "zoom-out";
+  fullScreenContainer.style.flexDirection = "row";
 
   // Flèche gauche
-  const leftArrow = document.createElement('button');
-  leftArrow.innerHTML = '&#10094;';
-  leftArrow.style.position = 'absolute';
-  leftArrow.style.left = '30px';
-  leftArrow.style.top = '50%';
-  leftArrow.style.transform = 'translateY(-50%)';
-  leftArrow.style.fontSize = '3rem';
-  leftArrow.style.color = 'white';
-  leftArrow.style.background = 'rgba(0,0,0,0.3)';
-  leftArrow.style.border = 'none';
-  leftArrow.style.borderRadius = '50%';
-  leftArrow.style.width = '56px';
-  leftArrow.style.height = '56px';
-  leftArrow.style.display = 'flex';
-  leftArrow.style.alignItems = 'center';
-  leftArrow.style.justifyContent = 'center';
-  leftArrow.style.cursor = 'pointer';
-  leftArrow.style.zIndex = '1060';
+  const leftArrow = document.createElement("button");
+  leftArrow.innerHTML = "&#10094;";
+  leftArrow.style.position = "absolute";
+  leftArrow.style.left = "30px";
+  leftArrow.style.top = "50%";
+  leftArrow.style.transform = "translateY(-50%)";
+  leftArrow.style.fontSize = "3rem";
+  leftArrow.style.color = "white";
+  leftArrow.style.background = "rgba(0,0,0,0.3)";
+  leftArrow.style.border = "none";
+  leftArrow.style.borderRadius = "50%";
+  leftArrow.style.width = "56px";
+  leftArrow.style.height = "56px";
+  leftArrow.style.display = "flex";
+  leftArrow.style.alignItems = "center";
+  leftArrow.style.justifyContent = "center";
+  leftArrow.style.cursor = "pointer";
+  leftArrow.style.zIndex = "1060";
 
   // Flèche droite
-  const rightArrow = document.createElement('button');
-  rightArrow.innerHTML = '&#10095;';
-  rightArrow.style.position = 'absolute';
-  rightArrow.style.right = '30px';
-  rightArrow.style.top = '50%';
-  rightArrow.style.transform = 'translateY(-50%)';
-  rightArrow.style.fontSize = '3rem';
-  rightArrow.style.color = 'white';
-  rightArrow.style.background = 'rgba(0,0,0,0.3)';
-  rightArrow.style.border = 'none';
-  rightArrow.style.borderRadius = '50%';
-  rightArrow.style.width = '56px';
-  rightArrow.style.height = '56px';
-  rightArrow.style.display = 'flex';
-  rightArrow.style.alignItems = 'center';
-  rightArrow.style.justifyContent = 'center';
-  rightArrow.style.cursor = 'pointer';
-  rightArrow.style.zIndex = '1060';
+  const rightArrow = document.createElement("button");
+  rightArrow.innerHTML = "&#10095;";
+  rightArrow.style.position = "absolute";
+  rightArrow.style.right = "30px";
+  rightArrow.style.top = "50%";
+  rightArrow.style.transform = "translateY(-50%)";
+  rightArrow.style.fontSize = "3rem";
+  rightArrow.style.color = "white";
+  rightArrow.style.background = "rgba(0,0,0,0.3)";
+  rightArrow.style.border = "none";
+  rightArrow.style.borderRadius = "50%";
+  rightArrow.style.width = "56px";
+  rightArrow.style.height = "56px";
+  rightArrow.style.display = "flex";
+  rightArrow.style.alignItems = "center";
+  rightArrow.style.justifyContent = "center";
+  rightArrow.style.cursor = "pointer";
+  rightArrow.style.zIndex = "1060";
 
-  const fullScreenImage = document.createElement('img');
-  fullScreenImage.style.maxWidth = '90%';
-  fullScreenImage.style.maxHeight = '90%';
-  fullScreenImage.style.margin = '0 auto';
-  fullScreenImage.style.display = 'block';
+  const fullScreenImage = document.createElement("img");
+  fullScreenImage.style.maxWidth = "90%";
+  fullScreenImage.style.maxHeight = "90%";
+  fullScreenImage.style.margin = "0 auto";
+  fullScreenImage.style.display = "block";
   fullScreenContainer.appendChild(leftArrow);
   fullScreenContainer.appendChild(fullScreenImage);
   fullScreenContainer.appendChild(rightArrow);
@@ -218,13 +235,13 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentIndex = 0;
 
   modalImages.forEach((image, idx, arr) => {
-    image.addEventListener('click', function (e) {
+    image.addEventListener("click", function (e) {
       // On récupère toutes les images de la même grille (même parent .row)
-      const row = this.closest('.row');
-      currentImages = Array.from(row.querySelectorAll('img'));
+      const row = this.closest(".row");
+      currentImages = Array.from(row.querySelectorAll("img"));
       currentIndex = currentImages.indexOf(this);
       showImage(currentIndex);
-      fullScreenContainer.style.display = 'flex';
+      fullScreenContainer.style.display = "flex";
       e.stopPropagation();
     });
   });
@@ -237,35 +254,33 @@ document.addEventListener('DOMContentLoaded', function () {
     fullScreenImage.src = currentImages[currentIndex].src;
   }
 
-  leftArrow.addEventListener('click', function (e) {
+  leftArrow.addEventListener("click", function (e) {
     e.stopPropagation();
     showImage(currentIndex - 1);
   });
-  rightArrow.addEventListener('click', function (e) {
+  rightArrow.addEventListener("click", function (e) {
     e.stopPropagation();
     showImage(currentIndex + 1);
   });
 
   // Fermer la lightbox en cliquant sur le fond
-  fullScreenContainer.addEventListener('click', function (e) {
+  fullScreenContainer.addEventListener("click", function (e) {
     if (e.target === fullScreenContainer) {
-      this.style.display = 'none';
+      this.style.display = "none";
     }
   });
 });
 
-
-
 // Carousel automatique pour les avis
-const carousel = document.querySelector('.reviews-carousel');
-const cards = document.querySelectorAll('.review-card');
+const carousel = document.querySelector(".reviews-carousel");
+const cards = document.querySelectorAll(".review-card");
 let index = 0;
 let interval = null;
 
 function showCards() {
   carousel.scrollTo({
     left: index * (cards[0].offsetWidth + 30),
-    behavior: 'smooth'
+    behavior: "smooth",
   });
 }
 
@@ -282,34 +297,24 @@ function stopCarousel() {
   clearInterval(interval);
 }
 
-carousel.addEventListener('mouseenter', stopCarousel);
-carousel.addEventListener('mouseleave', startCarousel);
+carousel.addEventListener("mouseenter", stopCarousel);
+carousel.addEventListener("mouseleave", startCarousel);
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
   startCarousel();
 });
 
-
 // Animation accordéon pour la FAQ
-document.addEventListener('DOMContentLoaded', function () {
-  const items = document.querySelectorAll('.faq-item');
-  items.forEach(item => {
-    const btn = item.querySelector('.faq-question');
-    btn.addEventListener('click', function () {
-      const isOpen = item.classList.contains('open');
-      items.forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".faq-item");
+  items.forEach((item) => {
+    const btn = item.querySelector(".faq-question");
+    btn.addEventListener("click", function () {
+      const isOpen = item.classList.contains("open");
+      items.forEach((i) => i.classList.remove("open"));
+      if (!isOpen) item.classList.add("open");
     });
   });
   // Ouvre la première question par défaut
-  if (items[0]) items[0].classList.add('open');
+  if (items[0]) items[0].classList.add("open");
 });
-
-
-
-
-
-
-
-
-

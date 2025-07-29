@@ -550,11 +550,55 @@ body {
   margin-bottom: 0;
 }
 
+/* Badge prix dégradé comme les boutons */
+.prix-badge {
+  background: linear-gradient(90deg, #2575fc 0%, #9B4F8F 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 12px rgba(30, 40, 90, 0.10);
+  padding: 0.6em 1.2em;
+  font-size: 1.1em;
+  border-radius: 2em;
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .reviews-carousel {
+    gap: 0;
+    padding: 0 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .review-card {
+    min-width: 94vw;
+    max-width: 94vw;
+    box-sizing: border-box;
+    padding: 18px 6px 18px 6px;
+    scroll-snap-align: start;
+  }
+}
+
+
+
+
 
 
 /*SECTION REVIEWS GOOGLE*/
 .google-reviews-section {
   font-family: 'Segoe UI', Arial, sans-serif;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.4, 2, .3, 1);
+}
+
+
+.google-reviews-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .reviews-carousel {
@@ -623,37 +667,8 @@ body {
   align-self: flex-end;
 }
 
-/* Badge prix dégradé comme les boutons */
-.prix-badge {
-  background: linear-gradient(90deg, #2575fc 0%, #9B4F8F 100%) !important;
-  color: #fff !important;
-  border: none !important;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 12px rgba(30, 40, 90, 0.10);
-  padding: 0.6em 1.2em;
-  font-size: 1.1em;
-  border-radius: 2em;
-  display: inline-block;
-}
 
-@media (max-width: 600px) {
-  .reviews-carousel {
-    gap: 0;
-    padding: 0 8px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
 
-  .review-card {
-    min-width: 94vw;
-    max-width: 94vw;
-    box-sizing: border-box;
-    padding: 18px 6px 18px 6px;
-    scroll-snap-align: start;
-  }
-}
 
 
 
