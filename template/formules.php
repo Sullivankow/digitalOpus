@@ -171,12 +171,14 @@ $options = [
       <?php endforeach; ?>
       <div class="row">
         <div class="col-12 text-center mt-2">
-          <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
+          <small class="text-white" style="font-size:0.90rem; opacity:0.85;">
             <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 400€ et hors évolution du site.</i>
           </small>
         </div>
       </div>
     </div>
+
+
 
     <!-- Offres site catalogue -->
     <h3 class="text-white mt-4 mb-3">Offres Site Catalogue (sans paiement)</h3>
@@ -198,10 +200,12 @@ $options = [
       <?php endforeach; ?>
       <div class="row">
         <div class="col-12 text-center mt-2">
-          <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
+          <small class="text-white" style="font-size:0.90rem; opacity:0.85;">
             <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 500€ et hors évolution du site.</i>
           </small>
         </div>
+
+
 
         <!-- Offres E-Commerce -->
         <h3 class="text-white mt-4 mb-3">Offres E-Commerce</h3>
@@ -224,11 +228,13 @@ $options = [
           <div class="row">
             <div class="row">
               <div class="col-12 text-center mt-2">
-                <small class="text-white" style="font-size:0.98rem; opacity:0.85;">
+                <small class="text-white" style="font-size:0.90rem; opacity:0.85;">
                   <i>Les prix affichés sont hors taxes (HT). * Hors abonnement annuel d’hébergement de votre site à partir de 600€ et hors évolution du site.</i>
                 </small>
               </div>
             </div>
+
+
 
             <!-- Options complémentaires -->
             <h3 class="text-white mt-4 mb-3">Options complémentaires (à la carte)</h3>
