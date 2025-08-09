@@ -1,6 +1,13 @@
 <?php
 /*Je créer mon tableau de projets pour la section réalisation et les insérer de manière dynamique"*/
 $projects = [
+
+  [
+    "title" => " Les Clés de l'Atlantique",
+    "images" => ["asset/images/atlantique1.png", "asset/images/atlantique2.png", "asset/images/atlantique3.png", "asset/images/atlantique4.png", "asset/images/atlantique5.png", "asset/images/atlantique6.png", "asset/images/atlantique7.png", "asset/images/atlantique8.png"],
+    "badges" => ["HTML", "css", "Bootstrap", "PHP"],
+    "description" => "Site vitrine moderne pour la conciergerie les Clés de l'Atlantique, responsive design, référencement SEO, formulaire de contact intégré."
+  ],
   [
     "title" => " Øverst",
     "images" => ["asset/images/overst.png", "asset/images/overst1.png", "asset/images/overst2.png", "asset/images/overst3.png", "asset/images/overst4.png", "asset/images/overst5.png"],
