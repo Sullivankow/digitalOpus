@@ -6,8 +6,8 @@
       <div id="lottie-computer-aboutUs" style="width:100%;max-width:900px;margin:0 auto;"></div>
     </div>
     <div class="col-lg-6">
-      <h1 class="display-5 fw-bold text-white lh-1 mb-3">À propos de SunDev Agency</h1>
-      <p class="lead">Chez SunDev Agency, nous créons bien plus que des sites web : nous bâtissons des expériences digitales sur mesure, pensées pour faire rayonner votre image et booster votre activité. Notre agence est née d'une passion pour le design, la technologie et la communication, avec une mission claire : accompagner les entrepreneurs, marques et indépendants dans leur croissance digitale.</p>
+      <h1 class="display-5 fw-bold text-white lh-1 mb-3">À propos de Digital Opus</h1>
+      <p class="lead">Chez Digital Opus, nous créons bien plus que des sites web : nous bâtissons des expériences digitales sur mesure, pensées pour faire rayonner votre image et booster votre activité. Notre agence est née d'une passion pour le design, la technologie et la communication, avec une mission claire : accompagner les entrepreneurs, marques et indépendants dans leur croissance digitale.</p>
       <ul class="list-unstyled mb-4">
         <li class="mb-2"><i class="bi bi-window"></i> Création de site vitrine</li>
         <li class="mb-2"><i class="bi bi-palette"></i> Identité visuelle & branding</li>

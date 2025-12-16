@@ -1,0 +1,27 @@
+# IDE caches
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependencies / builds
+vendor/
+node_modules/
+dist/
+build/
+
+# Env and logs
+.env
+.env.*
+*.log
+
+# Misc cache
+cache/
+tmp/
+*.tmp

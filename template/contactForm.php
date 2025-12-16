@@ -8,7 +8,7 @@
       <div class="col-lg-7 col-md-10">
         <div class="contact-card shadow-lg rounded-4 p-4 p-md-5 bg-white">
           <h2 class="mb-4 text-center fw-bold text-primary">
-            <i class="bi bi-envelope-paper-heart me-2"></i>Contactez SunDev Agency
+            <i class="bi bi-envelope-paper-heart me-2"></i>Contactez Nous
           </h2>
           <form action="send_message.php" method="post" autocomplete="off">
             <div class="row g-3 mb-3">

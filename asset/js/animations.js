@@ -42,8 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // Fonction utilitaire pour charger une animation Lottie
 function loadLottieAnimation(containerId, path) {
   const container = document.getElementById(containerId);
-  if (container && window.lottie) {
-    lottie.loadAnimation({
+  if (container && globalThis.lottie) {
+    globalThis.lottie.loadAnimation({
       container,
       renderer: "svg",
       loop: true,
@@ -232,10 +232,9 @@ function stopCarousel() {
 carousel.addEventListener("mouseenter", stopCarousel);
 carousel.addEventListener("mouseleave", startCarousel);
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   startCarousel();
 });
-
 // Animation accordéon pour la FAQ
 document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".faq-item");
